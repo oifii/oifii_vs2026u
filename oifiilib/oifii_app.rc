@@ -1,0 +1,2004 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIEWDATASETTINGS DIALOG 0, 0, 308, 157
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Mapping"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "3D Data Mapping (z coordinates)",IDC_STATIC,78,17,165,81
+    EDITTEXT        IDC_PIXELSETEDIT,82,26,24,14,ES_AUTOHSCROLL
+    CONTROL         "Pixelset",IDC_PIXELSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,28,41,10
+    EDITTEXT        IDC_POINTSETEDIT,82,41,24,14,ES_AUTOHSCROLL
+    CONTROL         "Pointset",IDC_POINTSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,42,45,10
+    EDITTEXT        IDC_TRIANGLESETEDIT,82,54,24,14,ES_AUTOHSCROLL
+    CONTROL         "Triangleset",IDC_TRIANGLESETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,57,52,10
+    EDITTEXT        IDC_VORONOISETEDIT,82,68,24,14,ES_AUTOHSCROLL
+    CONTROL         "Voronoiset",IDC_VORONOISETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,70,49,10
+    EDITTEXT        IDC_SEGMENTSETEDIT,82,81,24,14,ES_AUTOHSCROLL
+    CONTROL         "Segmentset",IDC_SEGMENTSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,84,53,10
+    COMBOBOX        IDC_VIEWCHANNELCOMBO,138,55,97,76,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Statistics mapped to triangle height",IDC_STATIC,108,44,131,27
+    EDITTEXT        IDC_VIEWCHANNELEDIT,110,54,24,14,ES_AUTOHSCROLL
+    GROUPBOX        "Data",IDC_STATIC,12,17,61,81
+    PUSHBUTTON      "OK",IDC_OKBUTTON,250,14,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,250,34,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,250,109,50,14
+    GROUPBOX        "Labels",IDC_STATIC,12,102,232,41
+    CONTROL         "Pointset",IDC_POINTSETLABELSSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,115,45,10
+    CONTROL         "Triangleset",IDC_TRIANGLESETLABELSSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,115,52,10
+    CONTROL         "Segmentset",IDC_SEGMENTSETLABELSSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,115,51,10
+    CONTROL         "Triangle center",IDC_TRIANGLESETCENTERSSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,115,61,10
+    CONTROL         "Classset (intensity)",IDC_CLASSSETLABELS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,129,79,10
+END
+
+IDD_PROJECTIONSETTINGS DIALOG 0, 0, 272, 146
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Projection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Looking at",IDC_STATIC,14,63,192,65
+    EDITTEXT        IDC_VVSLEFTEDIT,36,24,29,14,ES_AUTOHSCROLL
+    GROUPBOX        "Viewing Volume Shape",IDC_STATIC,14,13,191,45
+    LTEXT           "left",IDC_STATIC,25,27,10,8
+    EDITTEXT        IDC_VVSRIGHTEDIT,36,40,29,14,ES_AUTOHSCROLL
+    LTEXT           "bott.",IDC_STATIC,68,27,14,8
+    EDITTEXT        IDC_VVSTOPEDIT,84,40,29,14,ES_AUTOHSCROLL
+    LTEXT           "right",IDC_STATIC,21,42,14,8
+    EDITTEXT        IDC_VVSBOTTOMEDIT,84,24,29,14,ES_AUTOHSCROLL
+    LTEXT           "top",IDC_STATIC,69,42,13,8
+    EDITTEXT        IDC_VVSNEAREDIT,130,24,29,14,ES_AUTOHSCROLL
+    LTEXT           "near",IDC_STATIC,115,27,15,8
+    EDITTEXT        IDC_VVSFAREDIT,130,40,29,14,ES_AUTOHSCROLL
+    LTEXT           "far",IDC_STATIC,120,42,9,8
+    CONTROL         "Pers.",IDC_VVSPERSPECTIVECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,27,28,10
+    CONTROL         "Ortho.",IDC_VVSORTHOGRAPHICCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,40,31,10
+    EDITTEXT        IDC_LAEYEXEDIT,37,78,29,14,ES_AUTOHSCROLL
+    LTEXT           "eye",IDC_STATIC,21,81,12,8
+    EDITTEXT        IDC_LAEYEYEDIT,72,78,29,14,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,44,70,8,8
+    EDITTEXT        IDC_LACENTERXEDIT,37,93,29,14,ES_AUTOHSCROLL
+    LTEXT           "center",IDC_STATIC,16,96,22,8
+    EDITTEXT        IDC_LACENTERYEDIT,72,93,29,14,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,80,69,13,8
+    EDITTEXT        IDC_LAEYEZEDIT,108,78,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LACENTERZEDIT,108,93,29,14,ES_AUTOHSCROLL
+    CONTROL         "Ignore",IDC_LAIGNORECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,79,38,10
+    CONTROL         "Use it",IDC_LAUSEITCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,92,36,10
+    EDITTEXT        IDC_LAUPXEDIT,37,108,29,14,ES_AUTOHSCROLL
+    LTEXT           "up",IDC_STATIC,25,111,9,8
+    EDITTEXT        IDC_LAUPYEDIT,73,108,29,14,ES_AUTOHSCROLL
+    LTEXT           "z",IDC_STATIC,117,70,13,8
+    EDITTEXT        IDC_LAUPZEDIT,108,109,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_OKBUTTON,217,18,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,217,38,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,217,113,50,14
+END
+
+IDD_HISTOSETTINGS DIALOG 0, 0, 314, 169
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Histogram"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LOCALSTATCHANNELCOMBO,217,109,81,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Information channel",IDC_STATIC,213,97,87,28
+    GROUPBOX        "Local Neighborhood",IDC_STATIC,15,131,74,28
+    EDITTEXT        IDC_NEIGHBORHOODEDIT,55,142,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_OKBUTTON,257,14,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,257,35,50,14
+    GROUPBOX        "Histogram",IDC_HISTOFRAMESTATIC,15,27,189,98,NOT WS_VISIBLE
+    GROUPBOX        "Given Segment",IDC_STATIC,135,131,69,28
+    EDITTEXT        IDC_GIVENSEGMENTEDIT,169,142,29,14,ES_AUTOHSCROLL
+    CONTROL         "   id",IDC_GIVENSEGMENTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,144,24,10
+    CONTROL         "   num",IDC_LOCALNEIGHBORHOODCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,144,31,10
+    CONTROL         "Global",IDC_GLOBALCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,47,46,10
+    CONTROL         "Image Pixels",IDC_IMAGEHISTOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,66,51,10
+    CONTROL         "Image Features",IDC_STATHISTOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,79,60,10
+    CONTROL         "Auto",IDC_SCALE_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,13,29,10
+    CONTROL         "Fit",IDC_SCALE_FIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,13,23,10
+    GROUPBOX        "Scale",IDC_STATIC,99,7,105,18
+    GROUPBOX        "Roi",IDC_STATIC,95,131,33,28
+    CONTROL         "",IDC_LOCALROICHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,144,16,8
+    COMBOBOX        IDC_LOCALPOINTCOLLECTIONCOMBO,217,143,81,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Collection of points",IDC_COMBOSTATIC,213,131,87,28
+END
+
+IDD_SCATTERSETTINGS DIALOG 0, 0, 313, 173
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Scatter Graph"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_SCATTERCHANNELCOMBO1,217,99,83,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Information channel X,Y",IDC_STATIC,214,88,92,41
+    PUSHBUTTON      "OK",IDC_OKBUTTON,256,9,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,256,30,50,14
+    GROUPBOX        "Scatter Graph",IDC_HISTOFRAMESTATIC,15,27,191,101,NOT WS_VISIBLE
+    GROUPBOX        "Local Neighborhood",IDC_STATIC,15,134,74,29
+    EDITTEXT        IDC_NEIGHBORHOODEDIT,55,145,29,14,ES_AUTOHSCROLL
+    GROUPBOX        "Given Segment",IDC_STATIC,137,134,69,29
+    EDITTEXT        IDC_GIVENSEGMENTEDIT,171,145,29,14,ES_AUTOHSCROLL
+    CONTROL         "   id",IDC_GIVENSEGMENTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,147,24,10
+    CONTROL         "   num",IDC_LOCALNEIGHBORHOODCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,147,31,10
+    CONTROL         "Global",IDC_GLOBALCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,41,35,10
+    COMBOBOX        IDC_SCATTERCHANNELCOMBO2,217,114,83,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Auto",IDC_SCALE_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,13,29,10
+    CONTROL         "Fit",IDC_SCALE_FIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,13,23,10
+    GROUPBOX        "Scale",IDC_STATIC,101,7,105,18
+    CONTROL         "Image Pixels",IDC_IMAGEHISTOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,59,51,10
+    CONTROL         "Image Features",IDC_STATHISTOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,71,62,10
+    GROUPBOX        "Roi",IDC_STATIC,96,134,33,28
+    CONTROL         "",IDC_LOCALROICHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,147,16,8
+    COMBOBOX        IDC_LOCALPOINTCOLLECTIONCOMBO,217,146,84,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Collection of points",IDC_COMBOSTATIC,213,134,93,28
+END
+
+IDD_FUSIONSETTINGS DIALOG 0, 0, 280, 156
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Fusion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_FUSIONCHANNELCOMBO,17,60,81,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Specify similarity criteria using statistics channel",IDC_STATIC,13,47,200,29
+    GROUPBOX        "Segmentation type",IDC_STATIC,13,10,199,34
+    CONTROL         "hso",IDC_STHSOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,26,27,10
+    CONTROL         "hrg",IDC_STHRGCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,57,26,26,10
+    CONTROL         "mixed hso hrg",IDC_STMIXEDHSOHRGCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,26,59,10
+    EDITTEXT        IDC_STATISTICMINEDIT,113,60,29,14,ES_AUTOHSCROLL
+    LTEXT           "min",IDC_STATIC,102,62,12,8
+    EDITTEXT        IDC_STATISTICMAXEDIT,157,60,29,14,ES_AUTOHSCROLL
+    LTEXT           "max",IDC_STATIC,143,62,15,8
+    GROUPBOX        "Use similarity criteria with",IDC_STATIC,13,78,201,53
+    CONTROL         "exclusion threshold",IDC_CSCWEXCLUSIONTHRESHOLDCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,92,76,10
+    EDITTEXT        IDC_CSCWEXCLUSIONTHRESHOLDEDIT,114,90,29,14,ES_AUTOHSCROLL
+    CONTROL         "pre-classification",IDC_CSCWPRECLASSIFICATIONCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,112,68,10
+    COMBOBOX        IDC_PRECLASSIFICATIONCHANNELCOMBO,114,111,90,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "statistics channel",IDC_STATIC,22,102,186,25,BS_RIGHT
+    PUSHBUTTON      "OK",IDC_OKBUTTON,223,21,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,223,41,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,223,116,50,14
+END
+
+IDD_EXTRACTIONSETTINGS DIALOG 0, 0, 296, 159
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Extraction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_THRESHOLDEDIT,134,22,43,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALEEDIT,134,37,43,14,ES_AUTOHSCROLL
+    GROUPBOX        "Tree crowns detection by local intensity maximum",IDC_STATIC,11,11,219,42
+    LTEXT           "Threshold (value)",IDC_STATIC,74,24,56,8
+    LTEXT           "Scale (in pixel)",IDC_STATIC,76,39,50,8
+    CONTROL         "Detect",IDC_TCDDETECTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,29,37,10
+    GROUPBOX        "Tree crowns caracterization",IDC_STATIC,11,58,219,38
+    CONTROL         "Area",IDC_TCCAREACHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,70,31,10
+    CONTROL         "Density",IDC_TCCDENSITYCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,70,39,10
+    CONTROL         "Height (from shadow)",IDC_TCCHEIGHTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,70,83,10
+    CONTROL         "Average intensity",IDC_TCCAVERAGEINTENSITYCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,84,70,10
+    CONTROL         "Spectral variability",IDC_TCCSPECTRALVARIABILITYCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,84,73,10
+    GROUPBOX        "Exclusion zones",IDC_STATIC,11,102,219,37
+    CONTROL         "Roads",IDC_EXCLUDEROADCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,113,37,10
+    CONTROL         "Man-made constructions",IDC_EXCLUDEMANMADECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,113,93,10
+    CONTROL         "Forestation",IDC_EXCLUDEFORESTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,126,51,10
+    CONTROL         "Deforestation",IDC_EXCLUDEDEFORESTATIONCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,126,58,10
+    PUSHBUTTON      "Training",IDC_TRAINING,171,117,50,14
+    PUSHBUTTON      "OK",IDC_OKBUTTON,239,19,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,239,39,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,239,117,50,14
+END
+
+IDD_TRANSFORMATIONSETTINGS DIALOG 0, 0, 288, 154
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Transformation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Modeling Transformations",IDC_STATIC,15,53,204,84
+    EDITTEXT        IDC_MTTRANSLATEXEDIT,57,89,29,14,ES_AUTOHSCROLL
+    LTEXT           "translate",IDC_STATIC,27,92,29,8
+    EDITTEXT        IDC_MTTRANSLATEYEDIT,93,89,29,14,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,65,79,8,8
+    EDITTEXT        IDC_MTSCALEXEDIT,57,103,29,14,ES_AUTOHSCROLL
+    LTEXT           "scale",IDC_STATIC,37,106,18,8
+    EDITTEXT        IDC_MTSCALEYEDIT,93,103,29,14,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,102,79,13,8
+    EDITTEXT        IDC_MTTRANSLATEZEDIT,129,89,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MTSCALEZEDIT,129,105,29,14,ES_AUTOHSCROLL
+    CONTROL         "Ignore",IDC_MTIGNORECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,89,38,10
+    CONTROL         "Use it",IDC_MTUSEITCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,98,36,10
+    EDITTEXT        IDC_MTROTATEXEDIT,57,118,29,14,ES_AUTOHSCROLL
+    LTEXT           "rotate",IDC_STATIC,35,121,19,8
+    EDITTEXT        IDC_MTROTATEYEDIT,93,118,29,14,ES_AUTOHSCROLL
+    LTEXT           "z",IDC_STATIC,137,79,13,8
+    EDITTEXT        IDC_MTROTATEZEDIT,129,121,29,14,ES_AUTOHSCROLL
+    CONTROL         "Absolute",IDC_MTABSOLUTECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,114,43,10
+    CONTROL         "Relative",IDC_MTRELATIVECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,124,40,10
+    PUSHBUTTON      "Fit model in",IDC_BUTTON1,161,65,50,14
+    GROUPBOX        "Viewport transformation",IDC_STATIC,15,16,203,32
+    EDITTEXT        IDC_VTXEDIT,37,29,29,14,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,29,32,8,8
+    EDITTEXT        IDC_VTYEDIT,79,29,29,14,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,71,32,8,8
+    EDITTEXT        IDC_VTWIDTHEDIT,129,29,29,14,ES_AUTOHSCROLL
+    LTEXT           "width",IDC_STATIC,110,32,17,8
+    EDITTEXT        IDC_VTHEIGHTEDIT,183,29,29,14,ES_AUTOHSCROLL
+    LTEXT           "height",IDC_STATIC,161,32,19,8
+    PUSHBUTTON      "OK",IDC_OKBUTTON,233,22,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,233,42,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,233,117,50,14
+    COMBOBOX        IDC_DEFAULTSCOMBO,92,65,62,42,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CLASSIFICATIONSETTINGS DIALOG 0, 0, 279, 151
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Classification"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Auto training methods",IDC_STATIC,14,112,200,32
+    GROUPBOX        "Classification type",IDC_STATIC,14,9,199,29
+    CONTROL         "supervised",IDC_CTSUPERVISEDCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,22,53,10
+    CONTROL         "non supervised",IDC_CTNONSUPERVISEDCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,23,71,10
+    PUSHBUTTON      "OK",IDC_OKBUTTON,222,19,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,222,39,50,14
+    PUSHBUTTON      "Training",IDC_TRAININGBUTTON,222,83,50,14
+    GROUPBOX        "Manual training classes dictionary",IDC_STATIC,14,47,199,58
+    LISTBOX         IDC_CLASSNAMELISTBOX,136,56,72,44,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add Class",IDC_ADDBUTTON,25,82,50,14
+    PUSHBUTTON      "Delete Class",IDC_DELETEBUTTON,79,82,50,14
+    EDITTEXT        IDC_CLASSNAMEEDIT,25,62,104,14,ES_AUTOHSCROLL
+    CONTROL         "histogram based",IDC_HISTOCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,127,69,10
+    CONTROL         "scatter graph based",IDC_SCATTERCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,122,127,80,10
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,222,124,50,14
+END
+
+IDD_TRACESETTINGS DIALOG 0, 0, 298, 143
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Trace"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Trace local analysis",-1,93,42,135,81
+    CONTROL         "Pixelset",IDC_PIXELSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,53,41,10
+    CONTROL         "Pointset",IDC_POINTSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,67,45,10
+    CONTROL         "Triangleset",IDC_TRIANGLESETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,81,52,10
+    CONTROL         "Voronoiset",IDC_VORONOISETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,94,49,10
+    CONTROL         "Segmentset",IDC_SEGMENTSETSTATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,108,53,10
+    COMBOBOX        IDC_TLASTAT1COMBO,141,56,81,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Trace processes",-1,15,42,68,81
+    CONTROL         "Stat1",IDC_TLASTAT1CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,57,33,10
+    COMBOBOX        IDC_TLASTAT2COMBO,141,73,81,63,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Stat2",IDC_TLASTAT2CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,74,33,10
+    COMBOBOX        IDC_TLASTAT3COMBO,141,91,81,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Stat3",IDC_TLASTAT3CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,92,33,10
+    COMBOBOX        IDC_TLASTAT4COMBO,141,108,81,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Stat4",IDC_TLASTAT4CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,108,33,10
+    PUSHBUTTON      "OK",IDC_OKBUTTON,241,18,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,241,38,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,241,113,50,14
+END
+
+IDD_BEHAVIORSETTINGS DIALOG 0, 0, 312, 164
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Behavior"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Idle behaviors",IDC_STATIC,16,105,229,28
+    CONTROL         "Local extraction",IDC_MBLOCALEXTRACTIONCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,39,64,10
+    CONTROL         "Local segmentation",IDC_MBLOCALSEGMENTATIONCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,52,77,10
+    CONTROL         "Local classification",IDC_MBLOCALCLASSIFICATIONCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,65,71,10
+    GROUPBOX        "Mouse behaviors",IDC_STATIC,14,20,232,64
+    CONTROL         "Self-Training",IDC_IBSELFTRAININGCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,118,55,10
+    CONTROL         "Self-Extraction-Segmentation-Validation",IDC_IBSELFEXTRACSEGMENTVALIDCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,118,140,10
+    PUSHBUTTON      "OK",IDC_OKBUTTON,255,24,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,255,44,50,14
+    PUSHBUTTON      "Apply",IDC_APPLYBUTTON,255,119,50,14
+    CONTROL         "Highlight Nearest Point",IDC_MBHIGHLIGHTNEARESTPOINTCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,39,87,10
+    CONTROL         "Highlight Segment History",IDC_MBHIGHLIGHTSEGMENTCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,65,98,10
+    CONTROL         "Highlight Nearest Neighbors",IDC_MBHIGHLIGHTNEARESTNEIGHBORSCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,52,104,10
+END
+
+IDD_PROFILESETTINGS DIALOG 0, 0, 314, 173
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Profile"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Image Features",IDC_IMAGEFEATURESCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,79,63,10
+    COMBOBOX        IDC_LOCALPOINTCOLLECTIONCOMBO,217,143,81,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Collection of points",IDC_COMBOSTATIC,213,131,87,28
+    GROUPBOX        "Local Neighborhood",IDC_STATIC,15,131,74,28
+    EDITTEXT        IDC_NEIGHBORHOODEDIT,55,142,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_OKBUTTON,257,14,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBUTTON,257,35,50,14
+    GROUPBOX        "Segment Sequence Profile",IDC_PROFILEFRAMESTATIC,15,27,189,98,NOT WS_VISIBLE
+    GROUPBOX        "Given Segment",IDC_STATIC,134,131,70,28
+    EDITTEXT        IDC_GIVENSEGMENTEDIT,177,142,21,14,ES_AUTOHSCROLL
+    GROUPBOX        "Roi",IDC_STATIC,95,131,33,28
+    CONTROL         "   id",IDC_GIVENSEGMENTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,144,24,10
+    CONTROL         "   nei",IDC_LOCALNEIGHBORHOODCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,144,31,10
+    CONTROL         "Global",IDC_GLOBALCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,47,33,10
+    CONTROL         "Image Pixels",IDC_IMAGEPIXELSCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,66,51,10
+    CONTROL         "Auto",IDC_SCALE_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,13,29,10
+    CONTROL         "Fit",IDC_SCALE_FIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,13,23,10
+    GROUPBOX        "Scale",IDC_STATIC,99,7,105,18
+    CONTROL         "",IDC_LOCALROICHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,144,16,8
+    COMBOBOX        IDC_LOCALSTATCHANNELCOMBO,217,109,81,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Information channel",IDC_COMBOSTATIC2,213,98,87,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VIEWDATASETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_PROJECTIONSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_HISTOSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_SCATTERSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_FUSIONSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_EXTRACTIONSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_TRANSFORMATIONSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_CLASSIFICATIONSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_TRACESETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_BEHAVIORSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_PROFILESETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ZOOM                ICON                    "RES\\IDR_ZOOM.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOMRECTDRAG        CURSOR                  "RES\\ZOOMDRAG.CUR"
+IDC_ZOOMRECT            CURSOR                  "RES\\ZOOMRECT.CUR"
+IDC_DRAWELLIPSE         CURSOR                  "RES\\DRAWELLIPSE.CUR"
+IDC_DRAWELLIPSEDRAG     CURSOR                  "RES\\DRAWELLIPSEDRAG.CUR"
+IDC_ZOOMOUT             CURSOR                  "RES\\ZOOMOUT.CUR"
+IDC_ZOOMIN              CURSOR                  "RES\\ZOOMIN.CUR"
+IDC_ROIRECT             CURSOR                  "res\\cur00001.cur"
+IDC_ROIRECTDRAG         CURSOR                  "res\\cur00002.cur"
+IDC_ROIPOLYLINE         CURSOR                  "res\\roirect1.cur"
+IDC_ROIPOLYLINEDRAG     CURSOR                  "res\\roirectd.cur"
+IDC_ROIFREEHAND         CURSOR                  "res\\roipolyl.cur"
+IDC_ROIFREEHANDDRAG     CURSOR                  "res\\cur00003.cur"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 100, 100, 246, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OIII"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Offworld Intelligent Image Interpreter\rVersion 1.0 (beta)\rDevelopped by Stephane Poirier\r\rSpecial thanks to Geoffrey Edwards, Chris Gold and Jean-Marie Beaulieu for discussions, ideas and concepts.",IDC_STATIC,44,15,119,62
+    LTEXT           "Copyright © 1994-2014  Stephane Poirier",IDC_STATIC,43,118,135,8
+    DEFPUSHBUTTON   "OK",IDOK,201,17,32,14,WS_GROUP
+    LTEXT           "Order lines: \twww.oifii.org (from Internet)\r\t\t1-514-500-1449 (from North America)\r\t\t1-514-500-1449 (from elsewhere)",IDC_STATIC,43,82,191,25
+END
+
+IDD_GOTOPARTITION DIALOG 65535, 65535, 217, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to partition ..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        ID_TODISPLAY_EDIT,118,82,32,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Play",IDPLAY,179,8,32,14,WS_GROUP
+    DEFPUSHBUTTON   "Stop",IDSTOP,179,26,32,14,WS_GROUP
+    DEFPUSHBUTTON   "Goto",IDGOTO,179,57,32,14,WS_GROUP
+    DEFPUSHBUTTON   "Next",IDGOTONEXT,179,75,32,14,WS_GROUP
+    DEFPUSHBUTTON   "Close",8,180,101,32,14,WS_GROUP
+    LTEXT           "Initial Partition (max)",IDC_STATIC1,41,23,68,8
+    LTEXT           "Final Partition (min)",IDC_STATIC2,41,37,65,8
+    LTEXT           "Actual Partition",IDC_STATIC3,54,84,51,8
+    EDITTEXT        ID_INITIAL_EDIT,118,21,32,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        ID_FINAL_EDIT,118,34,32,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER
+    LTEXT           "Segment",IDC_STATIC4,119,10,30,8
+    LTEXT           "Starting Partition",IDC_STATIC5,54,70,59,8
+    LTEXT           "Ending Partition",IDC_STATIC6,54,98,56,8
+    EDITTEXT        ID_TOSTART_EDIT,118,67,32,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_TOEND_EDIT,118,96,32,12,ES_AUTOHSCROLL
+    GROUPBOX        "Computed",IDC_STATIC,6,3,155,44
+    GROUPBOX        "To be displayed",IDC_STATIC,6,53,154,59
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_COMMON              ICON                    "res\\OW2doc.ico"
+IDR_COMMON_AG           ICON                    "res\\OW2AGdoc.ico"
+IDR_COMMON_GE           ICON                    "res\\OWGEdoc.ico"
+IDR_COMMON_OL           ICON                    "res\\OWOLdoc.ico"
+IDR_MAINFRAME           ICON                    "res\\idr_main.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""res\\OIII.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "\r\n"
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Acquire",                     ID_FILE_ACQUIRE
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About OIII...",              ID_APP_ABOUT
+    END
+END
+
+IDR_COMMON MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "New 2DView",                  ID_VIEW_NEW2DVIEW
+        MENUITEM "New 3DView",                  ID_VIEW_NEW3DVIEW
+        MENUITEM "New GraphView",               ID_VIEW_NEWGRAPHVIEW
+        MENUITEM "New DataView",                ID_VIEW_GRAPHDATAVIEW
+        MENUITEM "New ZoomView",                ID_VIEW_NEWSELECTIONZOOMVIEW
+        MENUITEM SEPARATOR
+        POPUP "Zoom"
+        BEGIN
+            POPUP "Zoom &Center"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_IN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_OUT
+            END
+            POPUP "Zoom Poi&nt"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_POINTIN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_POINTOUT
+            END
+            POPUP "Zoom &Percent"
+            BEGIN
+                MENUITEM "1&0%",                        ID_ZOOMP_10
+                MENUITEM "&50%",                        ID_ZOOMP_50
+                MENUITEM "&75%",                        ID_ZOOMP_75
+                MENUITEM SEPARATOR
+                MENUITEM "&100%",                       ID_ZOOMP_100
+                MENUITEM "150%",                        ID_ZOOMP_150
+                MENUITEM "&200%",                       ID_ZOOMP_200
+                MENUITEM "&400%",                       ID_ZOOMP_400
+                MENUITEM "&800%",                       ID_ZOOMP_800
+                MENUITEM "1000%",                       ID_ZOOMP_1000
+                MENUITEM "1500%",                       ID_ZOOMP_1500
+                MENUITEM "2000%",                       ID_ZOOMP_2000
+                MENUITEM "2500%",                       ID_ZOOMP_2500
+                MENUITEM "3000%",                       ID_ZOOMP_3000
+            END
+            MENUITEM "Zoom &Rect",                  ID_ZOOM_RECTIN
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom to &Fit",                ID_ZOOM_ZOOMTOFIT
+            MENUITEM "Zoom &Normal",                ID_ZOOM_ZOOMNORMAL
+            MENUITEM "Zoom &Off",                   ID_ZOOM_ZOOMOFF
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "ROI"
+        BEGIN
+            MENUITEM "Floating Rect",               ID_ROI_FLOATING
+            MENUITEM SEPARATOR
+            MENUITEM "ROI Rect",                    ID_ROI_RECT
+            MENUITEM "ROI Line",                    ID_ROI_POLYLINE
+            MENUITEM "ROI Point",                   ID_ROI_FREEHAND
+        END
+        MENUITEM SEPARATOR
+        POPUP "Pixelset"
+        BEGIN
+            MENUITEM "Pixelset",                    ID_VIEW_PIXELSET
+            MENUITEM SEPARATOR
+            MENUITEM "Red",                         ID_VIEW_PIXELSET_RED
+            MENUITEM "Green",                       ID_VIEW_PIXELSET_GREEN
+            MENUITEM "Blue",                        ID_VIEW_PIXELSET_BLUE
+            MENUITEM SEPARATOR
+            MENUITEM "Intensity",                   ID_VIEW_PIXELSET_INTENSITY
+            MENUITEM "Hue",                         ID_VIEW_PIXELSET_HUE
+            MENUITEM "Saturation",                  ID_VIEW_PIXELSET_SATURATION
+        END
+        POPUP "Pointset"
+        BEGIN
+            MENUITEM "Pointset",                    ID_VIEW_POINTSET
+            MENUITEM SEPARATOR
+            MENUITEM "Mark",                        ID_VIEW_POINTSET_MARK
+            MENUITEM "Cross",                       ID_VIEW_POINTSET_CROSS
+            MENUITEM "Ellipse",                     ID_VIEW_POINTSET_ELLIPSE
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_POINTSET_LABELS
+        END
+        POPUP "Triangleset"
+        BEGIN
+            MENUITEM "Triangleset",                 ID_VIEW_TRIANGLESET
+            MENUITEM SEPARATOR
+            MENUITEM "Center Points",               ID_VIEW_TRIANGLESET_CENTERPOINTS
+            MENUITEM "3 Vertices",                  ID_VIEW_TRIANGLESET_3VERTICES
+            MENUITEM "Polygon",                     ID_VIEW_TRIANGLESET_POLYGON
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_TRIANGLESET_LABELS
+        END
+        POPUP "Voronoiset"
+        BEGIN
+            MENUITEM "Voronoiset",                  ID_VIEW_VORONOISET
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_VORONOISET_LABELS
+        END
+        POPUP "Segmentset"
+        BEGIN
+            MENUITEM "Segmentset",                  ID_VIEW_SEGMENTSET
+            MENUITEM "Segmentset Labels",           ID_VIEW_SEGMENTSET_LABELS
+            MENUITEM SEPARATOR
+            MENUITEM "Classset Labels",             ID_VIEW_CLASSSET_LABELS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Partition",              ID_VIEW_GOTOPARTITION
+        MENUITEM "Goto Classification",         ID_VIEW_GOTOCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Global Histogram",            ID_VIEW_GLOBALHISTOGRAM
+        MENUITEM "Local Histogram",             ID_VIEW_LOCALHISTOGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Log Window",                  ID_VIEW_LOGWINDOW
+    END
+    POPUP "Transformation"
+    BEGIN
+        POPUP "Spectral"
+        BEGIN
+            MENUITEM "Convert to HSI",              ID_TRANS_SPECTRAL_HSI
+            MENUITEM "Convert to Monochrome",       ID_TRANS_SPECTRAL_CONVERTTOMONO
+            MENUITEM "Convert to Monochrome Set",   ID_TRANS_SPECTRAL_CONVERTTOMONO_SET
+            MENUITEM SEPARATOR
+            MENUITEM "Invert",                      ID_TRANS_SPECTRAL_INVERT
+            MENUITEM "Equalize",                    ID_TRANS_SPECTRAL_EQUALIZE
+            MENUITEM "Stretch",                     ID_TRANS_SPECTRAL_STRETCH
+            MENUITEM SEPARATOR
+            MENUITEM "Filter (test IPL)",           ID_TRANS_SPECTRAL_FILTER
+        END
+        POPUP "Spatial"
+        BEGIN
+            MENUITEM "Create Edge Class",           ID_TRANS_SPATIAL_EDGEDETECT
+            MENUITEM "Create Flat Class",           ID_TRANS_SPATIAL_FLATDETECT
+            MENUITEM "Create Max Class",            ID_TRANS_SPATIAL_MAXDETECT
+            MENUITEM SEPARATOR
+            MENUITEM "Sharpen",                     ID_TRANS_SPATIAL_SHARPEN
+            MENUITEM SEPARATOR
+            MENUITEM "Rotation",                    ID_TRANS_SPATIAL_ROTATION
+            MENUITEM "Stretch",                     ID_TRANS_SPATIAL_STRETCH
+            MENUITEM "Confined Stretch",            ID_TRANS_SPATIAL_CONFINEDSTRETCH
+        END
+        POPUP "Temporal"
+        BEGIN
+            MENUITEM "Evolve",                      ID_TRANS_TEMPORAL_EVOLVE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Repeat in Sequence ...",      ID_TRANSFORMATION_REPEATINSEQUENCE
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario",             ID_TRANS_LAUNCHSCENARIO
+    END
+    POPUP "Analysis"
+    BEGIN
+        MENUITEM "Global Extraction",           ID_ANALYSIS_TEXTUREEXTRACTION
+        MENUITEM "Global Segmentation",         ID_ANALYSIS_TEXTURESEGMENTATION
+        MENUITEM "Global Classification",       ID_ANALYSIS_GLOBALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Extraction",            ID_ANALYSIS_LOCALEXTRACTION
+        MENUITEM "Local Segmentation",          ID_ANALYSIS_LOCALSEGMENTATION
+        MENUITEM "Local Classification",        ID_ANALYSIS_LOCALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Scale Selection",       ID_ANALYSIS_SCALE_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario ...",         ID_ANALYSIS_LAUNCHSCENARIO
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Extraction",                  ID_SETTINGS_EXTRACTION
+        MENUITEM SEPARATOR
+        MENUITEM "Profile",                     ID_SETTINGS_PROFILE
+        MENUITEM "Histogram",                   ID_SETTINGS_HISTO
+        MENUITEM "Scatter graph",               ID_SETTINGS_SCATTER
+        MENUITEM SEPARATOR
+        MENUITEM "Fusion",                      ID_SETTINGS_FUSION
+        MENUITEM SEPARATOR
+        MENUITEM "Classification",              ID_SETTINGS_CLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mapping",                     ID_SETTINGS_VIEWDATA
+        MENUITEM "Projection",                  ID_SETTINGS_PROJECTION
+        MENUITEM "Transformation",              ID_SETTINGS_TRANSFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mouse Behavior",              ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Idle Behavior",               ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Trace Behavior",              ID_SETTINGS_TRACEBEHAVIOR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About OIII...",              ID_APP_ABOUT
+    END
+END
+
+IDR_OW2VIEW_POPUP MENU
+BEGIN
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Pixelset",                    ID_VIEW_PIXELSET
+        MENUITEM SEPARATOR
+        MENUITEM "Pointset",                    ID_VIEW_POINTSET
+        MENUITEM "Pointset Labels",             ID_VIEW_POINTSET_LABELS
+        MENUITEM SEPARATOR
+        MENUITEM "Triangleset",                 ID_VIEW_TRIANGLESET
+        MENUITEM "Triangleset Labels",          ID_VIEW_TRIANGLESET_LABELS
+        MENUITEM SEPARATOR
+        MENUITEM "Voronoiset",                  ID_VIEW_VORONOISET
+        MENUITEM SEPARATOR
+        MENUITEM "Segmentset",                  ID_VIEW_SEGMENTSET
+        MENUITEM "Segmentset Labels",           ID_VIEW_SEGMENTSET_LABELS
+        MENUITEM SEPARATOR
+        MENUITEM "Classset Labels",             ID_VIEW_CLASSSET_LABELS
+    END
+END
+
+IDR_COMMON_GE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "New 2DView",                  ID_VIEW_NEW2DVIEW
+        MENUITEM "New 3DView",                  ID_VIEW_NEW3DVIEW
+        MENUITEM "New GraphView",               ID_VIEW_NEWGRAPHVIEW
+        MENUITEM "New DataView",                ID_VIEW_GRAPHDATAVIEW
+        MENUITEM "New ZoomView",                ID_VIEW_NEWSELECTIONZOOMVIEW
+        MENUITEM SEPARATOR
+        POPUP "Zoom"
+        BEGIN
+            POPUP "Zoom &Center"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_IN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_OUT
+            END
+            POPUP "Zoom Poi&nt"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_POINTIN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_POINTOUT
+            END
+            POPUP "Zoom &Percent"
+            BEGIN
+                MENUITEM "1&0%",                        ID_ZOOMP_10
+                MENUITEM "&50%",                        ID_ZOOMP_50
+                MENUITEM "&75%",                        ID_ZOOMP_75
+                MENUITEM SEPARATOR
+                MENUITEM "&100%",                       ID_ZOOMP_100
+                MENUITEM "150%",                        ID_ZOOMP_150
+                MENUITEM "&200%",                       ID_ZOOMP_200
+                MENUITEM "&400%",                       ID_ZOOMP_400
+                MENUITEM "&800%",                       ID_ZOOMP_800
+                MENUITEM "1000%",                       ID_ZOOMP_1000
+                MENUITEM "1500%",                       ID_ZOOMP_1500
+                MENUITEM "2000%",                       ID_ZOOMP_2000
+                MENUITEM "2500%",                       ID_ZOOMP_2500
+                MENUITEM "3000%",                       ID_ZOOMP_3000
+            END
+            MENUITEM "Zoom &Rect",                  ID_ZOOM_RECTIN
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom to &Fit",                ID_ZOOM_ZOOMTOFIT
+            MENUITEM "Zoom &Normal",                ID_ZOOM_ZOOMNORMAL
+            MENUITEM "Zoom &Off",                   ID_ZOOM_ZOOMOFF
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "ROI"
+        BEGIN
+            MENUITEM "Floating Rect",               ID_ROI_FLOATING
+            MENUITEM SEPARATOR
+            MENUITEM "ROI Rect",                    ID_ROI_RECT
+            MENUITEM "ROI Line",                    ID_ROI_POLYLINE
+            MENUITEM "ROI Point",                   ID_ROI_FREEHAND
+        END
+        MENUITEM SEPARATOR
+        POPUP "Pixelset"
+        BEGIN
+            MENUITEM "Pixelset",                    ID_VIEW_PIXELSET
+            MENUITEM SEPARATOR
+            MENUITEM "Red",                         ID_VIEW_PIXELSET_RED
+            MENUITEM "Green",                       ID_VIEW_PIXELSET_GREEN
+            MENUITEM "Blue",                        ID_VIEW_PIXELSET_BLUE
+            MENUITEM SEPARATOR
+            MENUITEM "Intensity",                   ID_VIEW_PIXELSET_INTENSITY
+            MENUITEM "Hue",                         ID_VIEW_PIXELSET_HUE
+            MENUITEM "Saturation",                  ID_VIEW_PIXELSET_SATURATION
+        END
+        POPUP "Pointset"
+        BEGIN
+            MENUITEM "Pointset",                    ID_VIEW_POINTSET
+            MENUITEM SEPARATOR
+            MENUITEM "Mark",                        ID_VIEW_POINTSET_MARK
+            MENUITEM "Cross",                       ID_VIEW_POINTSET_CROSS
+            MENUITEM "Ellipse",                     ID_VIEW_POINTSET_ELLIPSE
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_POINTSET_LABELS
+        END
+        POPUP "Triangleset"
+        BEGIN
+            MENUITEM "Triangleset",                 ID_VIEW_TRIANGLESET
+            MENUITEM SEPARATOR
+            MENUITEM "Center Points",               ID_VIEW_TRIANGLESET_CENTERPOINTS
+            MENUITEM "3 Vertices",                  ID_VIEW_TRIANGLESET_3VERTICES
+            MENUITEM "Polygon",                     ID_VIEW_TRIANGLESET_POLYGON
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_TRIANGLESET_LABELS
+        END
+        POPUP "Voronoiset"
+        BEGIN
+            MENUITEM "Voronoiset",                  ID_VIEW_VORONOISET
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_VORONOISET_LABELS
+        END
+        POPUP "Segmentset"
+        BEGIN
+            MENUITEM "Segmentset",                  ID_VIEW_SEGMENTSET
+            MENUITEM "Segmentset Labels",           ID_VIEW_SEGMENTSET_LABELS
+            MENUITEM SEPARATOR
+            MENUITEM "Classset Labels",             ID_VIEW_CLASSSET_LABELS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Partition",              ID_VIEW_GOTOPARTITION
+        MENUITEM "Goto Classification",         ID_VIEW_GOTOCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Global Histogram",            ID_VIEW_GLOBALHISTOGRAM
+        MENUITEM "Local Histogram",             ID_VIEW_LOCALHISTOGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Log Window",                  ID_VIEW_LOGWINDOW
+    END
+    POPUP "Transformation"
+    BEGIN
+        POPUP "Spectral"
+        BEGIN
+            MENUITEM "Convert to HSI",              ID_TRANS_SPECTRAL_HSI
+            MENUITEM "Convert to Monochrome",       ID_TRANS_SPECTRAL_CONVERTTOMONO
+            MENUITEM "Convert to Monochrome Set",   ID_TRANS_SPECTRAL_CONVERTTOMONO_SET
+            MENUITEM SEPARATOR
+            MENUITEM "Invert",                      ID_TRANS_SPECTRAL_INVERT
+            MENUITEM "Equalize",                    ID_TRANS_SPECTRAL_EQUALIZE
+            MENUITEM "Stretch",                     ID_TRANS_SPECTRAL_STRETCH
+            MENUITEM SEPARATOR
+            MENUITEM "Filter (test IPL)",           ID_TRANS_SPECTRAL_FILTER
+        END
+        POPUP "Spatial"
+        BEGIN
+            MENUITEM "Create Edge Class",           ID_TRANS_SPATIAL_EDGEDETECT
+            MENUITEM "Create Flat Class",           ID_TRANS_SPATIAL_FLATDETECT
+            MENUITEM "Create Max Class",            ID_TRANS_SPATIAL_MAXDETECT
+            MENUITEM SEPARATOR
+            MENUITEM "Sharpen",                     ID_TRANS_SPATIAL_SHARPEN
+            MENUITEM SEPARATOR
+            MENUITEM "Rotation",                    ID_TRANS_SPATIAL_ROTATION
+            MENUITEM "Stretch",                     ID_TRANS_SPATIAL_STRETCH
+            MENUITEM "Confined Stretch",            ID_TRANS_SPATIAL_CONFINEDSTRETCH
+        END
+        POPUP "Temporal"
+        BEGIN
+            MENUITEM "Evolve",                      ID_TRANS_TEMPORAL_EVOLVE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Repeat in Sequence ...",      ID_TRANSFORMATION_REPEATINSEQUENCE
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario",             ID_TRANS_LAUNCHSCENARIO
+    END
+    POPUP "Analysis"
+    BEGIN
+        MENUITEM "Global Extraction",           ID_ANALYSIS_TEXTUREEXTRACTION
+        MENUITEM "Global Segmentation",         ID_ANALYSIS_TEXTURESEGMENTATION
+        MENUITEM "Global Classification",       ID_ANALYSIS_GLOBALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Extraction",            ID_ANALYSIS_LOCALEXTRACTION
+        MENUITEM "Local Segmentation",          ID_ANALYSIS_LOCALSEGMENTATION
+        MENUITEM "Local Classification",        ID_ANALYSIS_LOCALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Scale Selection",       ID_ANALYSIS_SCALE_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario ...",         ID_ANALYSIS_LAUNCHSCENARIO
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Extraction",                  ID_SETTINGS_EXTRACTION
+        MENUITEM SEPARATOR
+        MENUITEM "Profile",                     ID_SETTINGS_PROFILE
+        MENUITEM "Histogram",                   ID_SETTINGS_HISTO
+        MENUITEM "Scatter graph",               ID_SETTINGS_SCATTER
+        MENUITEM SEPARATOR
+        MENUITEM "Fusion",                      ID_SETTINGS_FUSION
+        MENUITEM SEPARATOR
+        MENUITEM "Classification",              ID_SETTINGS_CLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mapping",                     ID_SETTINGS_VIEWDATA
+        MENUITEM "Projection",                  ID_SETTINGS_PROJECTION
+        MENUITEM "Transformation",              ID_SETTINGS_TRANSFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mouse Behavior",              ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Idle Behavior",               ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Trace Behavior",              ID_SETTINGS_TRACEBEHAVIOR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About OIII...",              ID_APP_ABOUT
+    END
+END
+
+IDR_COMMON_OL MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "New 2DView",                  ID_VIEW_NEW2DVIEW
+        MENUITEM "New 3DView",                  ID_VIEW_NEW3DVIEW
+        MENUITEM "New GraphView",               ID_VIEW_NEWGRAPHVIEW
+        MENUITEM "New DataView",                ID_VIEW_GRAPHDATAVIEW
+        MENUITEM "New ZoomView",                ID_VIEW_NEWSELECTIONZOOMVIEW
+        MENUITEM SEPARATOR
+        POPUP "Zoom"
+        BEGIN
+            POPUP "Zoom &Center"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_IN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_OUT
+            END
+            POPUP "Zoom Poi&nt"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_POINTIN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_POINTOUT
+            END
+            POPUP "Zoom &Percent"
+            BEGIN
+                MENUITEM "1&0%",                        ID_ZOOMP_10
+                MENUITEM "&50%",                        ID_ZOOMP_50
+                MENUITEM "&75%",                        ID_ZOOMP_75
+                MENUITEM SEPARATOR
+                MENUITEM "&100%",                       ID_ZOOMP_100
+                MENUITEM "150%",                        ID_ZOOMP_150
+                MENUITEM "&200%",                       ID_ZOOMP_200
+                MENUITEM "&400%",                       ID_ZOOMP_400
+                MENUITEM "&800%",                       ID_ZOOMP_800
+                MENUITEM "1000%",                       ID_ZOOMP_1000
+                MENUITEM "1500%",                       ID_ZOOMP_1500
+                MENUITEM "2000%",                       ID_ZOOMP_2000
+                MENUITEM "2500%",                       ID_ZOOMP_2500
+                MENUITEM "3000%",                       ID_ZOOMP_3000
+            END
+            MENUITEM "Zoom &Rect",                  ID_ZOOM_RECTIN
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom to &Fit",                ID_ZOOM_ZOOMTOFIT
+            MENUITEM "Zoom &Normal",                ID_ZOOM_ZOOMNORMAL
+            MENUITEM "Zoom &Off",                   ID_ZOOM_ZOOMOFF
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "ROI"
+        BEGIN
+            MENUITEM "Floating Rect",               ID_ROI_FLOATING
+            MENUITEM SEPARATOR
+            MENUITEM "ROI Rect",                    ID_ROI_RECT
+            MENUITEM "ROI Line",                    ID_ROI_POLYLINE
+            MENUITEM "ROI Point",                   ID_ROI_FREEHAND
+        END
+        MENUITEM SEPARATOR
+        POPUP "Pixelset"
+        BEGIN
+            MENUITEM "Pixelset",                    ID_VIEW_PIXELSET
+            MENUITEM SEPARATOR
+            MENUITEM "Red",                         ID_VIEW_PIXELSET_RED
+            MENUITEM "Green",                       ID_VIEW_PIXELSET_GREEN
+            MENUITEM "Blue",                        ID_VIEW_PIXELSET_BLUE
+            MENUITEM SEPARATOR
+            MENUITEM "Intensity",                   ID_VIEW_PIXELSET_INTENSITY
+            MENUITEM "Hue",                         ID_VIEW_PIXELSET_HUE
+            MENUITEM "Saturation",                  ID_VIEW_PIXELSET_SATURATION
+        END
+        POPUP "Pointset"
+        BEGIN
+            MENUITEM "Pointset",                    ID_VIEW_POINTSET
+            MENUITEM SEPARATOR
+            MENUITEM "Mark",                        ID_VIEW_POINTSET_MARK
+            MENUITEM "Cross",                       ID_VIEW_POINTSET_CROSS
+            MENUITEM "Ellipse",                     ID_VIEW_POINTSET_ELLIPSE
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_POINTSET_LABELS
+        END
+        POPUP "Triangleset"
+        BEGIN
+            MENUITEM "Triangleset",                 ID_VIEW_TRIANGLESET
+            MENUITEM SEPARATOR
+            MENUITEM "Center Points",               ID_VIEW_TRIANGLESET_CENTERPOINTS
+            MENUITEM "3 Vertices",                  ID_VIEW_TRIANGLESET_3VERTICES
+            MENUITEM "Polygon",                     ID_VIEW_TRIANGLESET_POLYGON
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_TRIANGLESET_LABELS
+        END
+        POPUP "Voronoiset"
+        BEGIN
+            MENUITEM "Voronoiset",                  ID_VIEW_VORONOISET
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_VORONOISET_LABELS
+        END
+        POPUP "Segmentset"
+        BEGIN
+            MENUITEM "Segmentset",                  ID_VIEW_SEGMENTSET
+            MENUITEM "Segmentset Labels",           ID_VIEW_SEGMENTSET_LABELS
+            MENUITEM SEPARATOR
+            MENUITEM "Classset Labels",             ID_VIEW_CLASSSET_LABELS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Partition",              ID_VIEW_GOTOPARTITION
+        MENUITEM "Goto Classification",         ID_VIEW_GOTOCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Global Histogram",            ID_VIEW_GLOBALHISTOGRAM
+        MENUITEM "Local Histogram",             ID_VIEW_LOCALHISTOGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Log Window",                  ID_VIEW_LOGWINDOW
+    END
+    POPUP "Transformation"
+    BEGIN
+        POPUP "Spectral"
+        BEGIN
+            MENUITEM "Convert to HSI",              ID_TRANS_SPECTRAL_HSI
+            MENUITEM "Convert to Monochrome",       ID_TRANS_SPECTRAL_CONVERTTOMONO
+            MENUITEM "Convert to Monochrome Set",   ID_TRANS_SPECTRAL_CONVERTTOMONO_SET
+            MENUITEM SEPARATOR
+            MENUITEM "Invert",                      ID_TRANS_SPECTRAL_INVERT
+            MENUITEM "Equalize",                    ID_TRANS_SPECTRAL_EQUALIZE
+            MENUITEM "Stretch",                     ID_TRANS_SPECTRAL_STRETCH
+            MENUITEM SEPARATOR
+            MENUITEM "Filter (test IPL)",           ID_TRANS_SPECTRAL_FILTER
+        END
+        POPUP "Spatial"
+        BEGIN
+            MENUITEM "Create Edge Class",           ID_TRANS_SPATIAL_EDGEDETECT
+            MENUITEM "Create Flat Class",           ID_TRANS_SPATIAL_FLATDETECT
+            MENUITEM "Create Max Class",            ID_TRANS_SPATIAL_MAXDETECT
+            MENUITEM SEPARATOR
+            MENUITEM "Sharpen",                     ID_TRANS_SPATIAL_SHARPEN
+            MENUITEM SEPARATOR
+            MENUITEM "Rotation",                    ID_TRANS_SPATIAL_ROTATION
+            MENUITEM "Stretch",                     ID_TRANS_SPATIAL_STRETCH
+            MENUITEM "Confined Stretch",            ID_TRANS_SPATIAL_CONFINEDSTRETCH
+        END
+        POPUP "Temporal"
+        BEGIN
+            MENUITEM "Evolve",                      ID_TRANS_TEMPORAL_EVOLVE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Repeat in Sequence ...",      ID_TRANSFORMATION_REPEATINSEQUENCE
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario",             ID_TRANS_LAUNCHSCENARIO
+    END
+    POPUP "Analysis"
+    BEGIN
+        MENUITEM "Global Extraction",           ID_ANALYSIS_TEXTUREEXTRACTION
+        MENUITEM "Global Segmentation",         ID_ANALYSIS_TEXTURESEGMENTATION
+        MENUITEM "Global Classification",       ID_ANALYSIS_GLOBALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Extraction",            ID_ANALYSIS_LOCALEXTRACTION
+        MENUITEM "Local Segmentation",          ID_ANALYSIS_LOCALSEGMENTATION
+        MENUITEM "Local Classification",        ID_ANALYSIS_LOCALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Scale Selection",       ID_ANALYSIS_SCALE_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario ...",         ID_ANALYSIS_LAUNCHSCENARIO
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Extraction",                  ID_SETTINGS_EXTRACTION
+        MENUITEM SEPARATOR
+        MENUITEM "Profile",                     ID_SETTINGS_PROFILE
+        MENUITEM "Histogram",                   ID_SETTINGS_HISTO
+        MENUITEM "Scatter graph",               ID_SETTINGS_SCATTER
+        MENUITEM SEPARATOR
+        MENUITEM "Fusion",                      ID_SETTINGS_FUSION
+        MENUITEM SEPARATOR
+        MENUITEM "Classification",              ID_SETTINGS_CLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mapping",                     ID_SETTINGS_VIEWDATA
+        MENUITEM "Projection",                  ID_SETTINGS_PROJECTION
+        MENUITEM "Transformation",              ID_SETTINGS_TRANSFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mouse Behavior",              ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Idle Behavior",               ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Trace Behavior",              ID_SETTINGS_TRACEBEHAVIOR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About OIII...",              ID_APP_ABOUT
+    END
+END
+
+IDR_COMMON_AG MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "New 2DView",                  ID_VIEW_NEW2DVIEW
+        MENUITEM "New 3DView",                  ID_VIEW_NEW3DVIEW
+        MENUITEM "New GraphView",               ID_VIEW_NEWGRAPHVIEW
+        MENUITEM "New DataView",                ID_VIEW_GRAPHDATAVIEW
+        MENUITEM "New ZoomView",                ID_VIEW_NEWSELECTIONZOOMVIEW
+        MENUITEM SEPARATOR
+        POPUP "Zoom"
+        BEGIN
+            POPUP "Zoom &Center"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_IN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_OUT
+            END
+            POPUP "Zoom Poi&nt"
+            BEGIN
+                MENUITEM "&In by 25%",                  ID_ZOOM_POINTIN
+                MENUITEM "&Out by 25%",                 ID_ZOOM_POINTOUT
+            END
+            POPUP "Zoom &Percent"
+            BEGIN
+                MENUITEM "1&0%",                        ID_ZOOMP_10
+                MENUITEM "&50%",                        ID_ZOOMP_50
+                MENUITEM "&75%",                        ID_ZOOMP_75
+                MENUITEM SEPARATOR
+                MENUITEM "&100%",                       ID_ZOOMP_100
+                MENUITEM "150%",                        ID_ZOOMP_150
+                MENUITEM "&200%",                       ID_ZOOMP_200
+                MENUITEM "&400%",                       ID_ZOOMP_400
+                MENUITEM "&800%",                       ID_ZOOMP_800
+                MENUITEM "1000%",                       ID_ZOOMP_1000
+                MENUITEM "1500%",                       ID_ZOOMP_1500
+                MENUITEM "2000%",                       ID_ZOOMP_2000
+                MENUITEM "2500%",                       ID_ZOOMP_2500
+                MENUITEM "3000%",                       ID_ZOOMP_3000
+            END
+            MENUITEM "Zoom &Rect",                  ID_ZOOM_RECTIN
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom to &Fit",                ID_ZOOM_ZOOMTOFIT
+            MENUITEM "Zoom &Normal",                ID_ZOOM_ZOOMNORMAL
+            MENUITEM "Zoom &Off",                   ID_ZOOM_ZOOMOFF
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "ROI"
+        BEGIN
+            MENUITEM "Floating Rect",               ID_ROI_FLOATING
+            MENUITEM SEPARATOR
+            MENUITEM "ROI Rect",                    ID_ROI_RECT
+            MENUITEM "ROI Line",                    ID_ROI_POLYLINE
+            MENUITEM "ROI Point",                   ID_ROI_FREEHAND
+        END
+        MENUITEM SEPARATOR
+        POPUP "Pixelset"
+        BEGIN
+            MENUITEM "Pixelset",                    ID_VIEW_PIXELSET
+            MENUITEM SEPARATOR
+            MENUITEM "Red",                         ID_VIEW_PIXELSET_RED
+            MENUITEM "Green",                       ID_VIEW_PIXELSET_GREEN
+            MENUITEM "Blue",                        ID_VIEW_PIXELSET_BLUE
+            MENUITEM SEPARATOR
+            MENUITEM "Intensity",                   ID_VIEW_PIXELSET_INTENSITY
+            MENUITEM "Hue",                         ID_VIEW_PIXELSET_HUE
+            MENUITEM "Saturation",                  ID_VIEW_PIXELSET_SATURATION
+        END
+        POPUP "Pointset"
+        BEGIN
+            MENUITEM "Pointset",                    ID_VIEW_POINTSET
+            MENUITEM SEPARATOR
+            MENUITEM "Mark",                        ID_VIEW_POINTSET_MARK
+            MENUITEM "Cross",                       ID_VIEW_POINTSET_CROSS
+            MENUITEM "Ellipse",                     ID_VIEW_POINTSET_ELLIPSE
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_POINTSET_LABELS
+        END
+        POPUP "Triangleset"
+        BEGIN
+            MENUITEM "Triangleset",                 ID_VIEW_TRIANGLESET
+            MENUITEM SEPARATOR
+            MENUITEM "Center Points",               ID_VIEW_TRIANGLESET_CENTERPOINTS
+            MENUITEM "3 Vertices",                  ID_VIEW_TRIANGLESET_3VERTICES
+            MENUITEM "Polygon",                     ID_VIEW_TRIANGLESET_POLYGON
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_TRIANGLESET_LABELS
+        END
+        POPUP "Voronoiset"
+        BEGIN
+            MENUITEM "Voronoiset",                  ID_VIEW_VORONOISET
+            MENUITEM SEPARATOR
+            MENUITEM "Labels",                      ID_VIEW_VORONOISET_LABELS
+        END
+        POPUP "Segmentset"
+        BEGIN
+            MENUITEM "Segmentset",                  ID_VIEW_SEGMENTSET
+            MENUITEM "Segmentset Labels",           ID_VIEW_SEGMENTSET_LABELS
+            MENUITEM SEPARATOR
+            MENUITEM "Classset Labels",             ID_VIEW_CLASSSET_LABELS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Goto Partition",              ID_VIEW_GOTOPARTITION
+        MENUITEM "Goto Classification",         ID_VIEW_GOTOCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Global Histogram",            ID_VIEW_GLOBALHISTOGRAM
+        MENUITEM "Local Histogram",             ID_VIEW_LOCALHISTOGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Log Window",                  ID_VIEW_LOGWINDOW
+    END
+    POPUP "Transport"
+    BEGIN
+        MENUITEM "Play",                        ID_TRANSPORT_PLAY
+        MENUITEM "Pause",                       ID_TRANSPORT_PAUSE
+        MENUITEM "Stop",                        ID_TRANSPORT_STOP
+    END
+    POPUP "Analysis"
+    BEGIN
+        MENUITEM "Global Extraction",           ID_ANALYSIS_TEXTUREEXTRACTION
+        MENUITEM "Global Segmentation",         ID_ANALYSIS_TEXTURESEGMENTATION
+        MENUITEM "Global Classification",       ID_ANALYSIS_GLOBALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Extraction",            ID_ANALYSIS_LOCALEXTRACTION
+        MENUITEM "Local Segmentation",          ID_ANALYSIS_LOCALSEGMENTATION
+        MENUITEM "Local Classification",        ID_ANALYSIS_LOCALCLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Local Scale Selection",       ID_ANALYSIS_SCALE_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Launch Scenario ...",         ID_ANALYSIS_LAUNCHSCENARIO
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Extraction",                  ID_SETTINGS_EXTRACTION
+        MENUITEM SEPARATOR
+        MENUITEM "Profile",                     ID_SETTINGS_PROFILE
+        MENUITEM "Histogram",                   ID_SETTINGS_HISTO
+        MENUITEM "Scatter graph",               ID_SETTINGS_SCATTER
+        MENUITEM SEPARATOR
+        MENUITEM "Fusion",                      ID_SETTINGS_FUSION
+        MENUITEM SEPARATOR
+        MENUITEM "Classification",              ID_SETTINGS_CLASSIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mapping",                     ID_SETTINGS_VIEWDATA
+        MENUITEM "Projection",                  ID_SETTINGS_PROJECTION
+        MENUITEM "Transformation",              ID_SETTINGS_TRANSFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Mouse Behavior",              ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Idle Behavior",               ID_SETTINGS_IDLEBEHAVIOR
+        MENUITEM "Trace Behavior",              ID_SETTINGS_TRACEBEHAVIOR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About OIII...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "OIFII.ORG"
+            VALUE "FileDescription", "OIII MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OIII"
+            VALUE "LegalCopyright", "Copyright © 1994-2014  Stephane Poirier"
+            VALUE "LegalTrademarks", "Offworld Intelligent Image Interpreter"
+            VALUE "OriginalFilename", "OIII.EXE"
+            VALUE "ProductName", "Offworld Intelligent Image Interpreter"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDR_MAINFRAME           "Offworld Intelligent Image Interpreter"
+END
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDR_COMMON              "\n2D World\n2D World\n2D World Files (*.ow2)\n.OW2\nOIII.Document\nOffworld Document"
+    IDR_COMMON_GE           "\n3D GE World\n3D GE World\n3D GE World Files (*.ow3)\n.OW3\nOIII.Document\nOffworld Document"
+    IDR_COMMON_OL           "\n3D OL World\n3D OL World\n3D OL World Files (*.ow3)\n.OW3\nOIII.Document\nOffworld Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Offworld Intelligent Image Interpreter"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_LOCATION   "No points yet move the mouse for some"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_ZOOM_IN              "Zoom in by 25%\nIn 25%"
+    ID_ZOOM_OUT             "Zoom out by 25%\nOut 25%"
+    ID_ZOOM_POINTIN         "Zoom in 25% on left button down\nIn 25% on button"
+    ID_ZOOM_POINTOUT        "Zoom out 25% on left button down\nOut 25% on button"
+    ID_ZOOM_RECTIN          "Zoom in 25% based on rectangle\nIn 25% on rectangle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "List Help topics\nHelp Index"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_INDICATOR_ZOOMP      "No Zoom percent yet"
+    ID_INDICATOR_ZOOMF      "No Zoom factor yet"
+    ID_INDICATOR_POINT      "No point yet wiggle the mouse in the client area."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TEST_POINTSET        "Test the POINTSET library"
+    ID_TEST_SEGMENTSET      "Test the SEGMENTSET library"
+    ID_TEST_PIXELSET        "Test the PIXELSET library"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_PIXELSET        "View the default pixelset information (as opened from file)"
+    ID_VIEW_POINTSET        "View the extracted pointset information (as identified from analysis of the pixelset)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPEN_FILTEREXTENSIONS 
+                            ".tif;*.bmp;*.rle;*.mim;*.mod;*.mmo;*.raw;*.pcx;*.tga;*.vda;*.icb;*.vst;*.gif;*.jpg;*.bst;*.scr;\n.tif\n.bmp;*.rle\n.mim\n.mod;*.mmo\n.raw\n.pcx\n.tga;*.vda;*.icb;*.vst\n.gif\n.jpg\n.bst\n.scr\n.*\n"
+    IDS_OPEN_ALL_SUPPORTED  "All Supported File Formats"
+    IDS_OPEN_TIFF           "TIFF, Tagged Image File Format (*.tif)"
+    IDS_OPEN_BITMAP         "BMP, bitmap file format (*.bmp, *.rle)"
+    IDS_OPEN_MIM            "MIM, Matrox MIL file format (*.mim)"
+    IDS_OPEN_MOD            "MOD, Matrox model file format (*.mod, *.mmo)"
+    IDS_OPEN_RAW            "RAW, raw image file format (*.raw)"
+    IDS_OPEN_PCX            "PCX, run length file format (*.pcx)"
+    IDS_OPEN_TARGA          "TARGA file format (*.tga, *.vda, *.icb, *.vst)"
+    IDS_OPEN_GIF            "GIF, Graphics Interchange file format (*.gif)"
+    IDS_OPEN_JPEG           "JPEG file format (*.jpg)"
+    IDS_OPEN_BST            "BST, Matrox Blob Settings file (*.bst)"
+    IDS_OPEN_SCR            "SCR, Inspector Script file (*.scr)"
+    IDS_OPEN_ALL_FILES      "All Files (*.*)"
+    IDS_OPEN_END            "end"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SAVE_MONO_FILTEREXTENSIONS 
+                            ".tif\n.tif\n.bmp\n.bmp\n.raw\n.jpg\n.pcx\n.gif\n.tga\n"
+    IDS_SAVE_MONO_TIFF_UNCOMPRESSED "TIFF, uncompressed (*.tif)"
+    IDS_SAVE_MONO_TIFF_LZW  "TIFF, LZW compression (*.tif)"
+    IDS_SAVE_MONO_BMP_UNCOMPRESSED "BMP, bitmap uncompressed (*.bmp)"
+    IDS_SAVE_MONO_BMP_COMPRESSED "BMP, bitmap compressed (*.bmp)"
+    IDS_SAVE_MONO_RAW       "RAW, raw image file format (*.raw)"
+    IDS_SAVE_MONO_JPEG      "JPEG file format (*.jpg)"
+    IDS_SAVE_MONO_PCX_UNCOMPRESSED 
+                            "PCX, run length encoded file format (*.pcx)"
+    IDS_SAVE_MONO_GIF       "GIF, Graphics Interchange file Format (*.gif)"
+    IDS_SAVE_MONO_TARGA     "TARGA file format (*.tga)"
+    IDS_SAVE_MONO_END       "end"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SAVE_COLOR_FILTEREXTENSIONS ".tif\n.tif\n.bmp\n.jpg\n.pcx\n.tga\n"
+    IDS_SAVE_COLOR_TIFF_UNCOMPRESSED "TIFF, uncompressed (*.tif)"
+    IDS_SAVE_COLOR_TIFF_LZW "TIFF, LZW compression (*.tif)"
+    IDS_SAVE_COLOR_BMP_UNCOMPRESSED "BMP, bitmap uncompressed (*.bmp)"
+    IDS_SAVE_COLOR_JPEG     "JPEG file format (*.jpg)"
+    IDS_SAVE_COLOR_PCX_UNCOMPRESSED 
+                            "PCX, run length encoded file format (*.pcx)"
+    IDS_SAVE_COLOR_TARGA    "TARGA file format (*.tga)"
+    IDS_SAVE_COLOR_END      "end"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_TYPE_TIFF_UNCOMPRESSED "TIFF uncompressed"
+    IDS_FILE_TYPE_BMP_UNCOMPRESSED "BMP uncompressed"
+    IDS_FILE_TYPE_PCX_UNCOMPRESSED "PCX uncompressed"
+    IDS_FILE_TYPE_TARGA     "TARGA"
+    IDS_FILE_TYPE_GIF       "GIF"
+    IDS_FILE_TYPE_WPG       "WordPerfect"
+    IDS_FILE_TYPE_WMF       "Windows metafile"
+    IDS_FILE_TYPE_TIFF_HUFFMAN "TIFF Huffman"
+    IDS_FILE_TYPE_TIFF_G3_FAX "TIFF G3 fax"
+    IDS_FILE_TYPE_TIFF_LZW  "TIFF LZW"
+    IDS_FILE_TYPE_TIFF_G4_FAX "TIFF G4 fax"
+    IDS_FILE_TYPE_DCX       "DCX"
+    IDS_FILE_TYPE_BMP_COMPRESSED "BMP compressed"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_TYPE_JPEG      "JPEG"
+    IDS_FILE_TYPE_EPS       "Encapsulated PostScript"
+    IDS_FILE_TYPE_PICT      "PICT"
+    IDS_FILE_TYPE_TIFF_PACK "TIFF pack bits"
+    IDS_FILE_TYPE_TIFF_G3_2D "TIFF G3 2D"
+    IDS_FILE_TYPE_MIM       "Matrox Imaging Library file format"
+    IDS_FILE_TYPE_MOD_      "Matrox model file format"
+    IDS_FILE_TYPE_RAW_      "Raw image file format"
+    IDS_FILE_TYPE_BLOB_     "Matrox blob settings file format"
+    IDS_FILE_TYPE_ERROR     "Invalid file type"
+    ID_VIEW_ZOOM_IN_11      "Restore the actual image size"
+    ID_VIEW_ZOOM_IN_21      "Zoom in the image 2x"
+    ID_VIEW_ZOOM_IN_31      "Zoom in the image 3x"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_ZOOM_IN_41      "Zoom in the image 4x"
+    ID_VIEW_ZOOM_IN_51      "Zoom in the image 5x"
+    ID_VIEW_ZOOM_IN_61      "Zoom in the image 6x"
+    ID_VIEW_ZOOM_IN_71      "Zoom in the image 7x"
+    ID_VIEW_ZOOM_IN_81      "Zoom in the image 8x"
+    ID_VIEW_ZOOM_OUT_11     "Restore the actual image size"
+    ID_VIEW_ZOOM_OUT_12     "Zoom out the image 2x"
+    ID_VIEW_ZOOM_OUT_13     "Zoom out the image 3x"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_ZOOM_OUT_14     "Zoom out the image 4x"
+    ID_VIEW_ZOOM_OUT_15     "Zoom out the image 5x"
+    ID_VIEW_ZOOM_OUT_16     "Zoom out the image 6x"
+    ID_VIEW_ZOOM_OUT_17     "Zoom out the image 7x"
+    ID_VIEW_ZOOM_OUT_18     "Zoom out the image 8x"
+    ID_VIEW_TOFIT           "Zoom the image to fit"
+    ID_VIEW_ZOOM            "Switch to zoom mode controlled by left and right mouse bottons"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SELECTION_BAR   "Show or hide the selection bar"
+    ID_VIEW_COMPOSITE       "Display the image"
+    ID_VIEW_COMP3           "Display the 3 color components in the same window"
+    ID_VIEW_COMP4           "Display the image and its 3 color components in the same window"
+    ID_VIEW_COMPMDI         "Display the 3 color components in separate windows"
+    ID_VIEW_IMAGE_INFO      "Display active image information"
+    ID_VIEW_AS_LINEGRAPH    "View as a line graph"
+    ID_VIEW_AS_VBARGRAPH    "View as bar graph"
+    ID_VIEW_FIT_ALL         "Fit all graph data into the drawing"
+    ID_VIEW_FIT_ONEVALUEPERPIXEL 
+                            "Guarantee a minimum of one value per pixel in the drawing"
+    ID_VIEW_GRAPH           "View the graph window"
+    ID_VIEW_GRAPHDATA       "View the graph data window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OW2MDIFRAME_INDCR_ZERO "(x,y)"
+    ID_OW2MDIFRAME_INDCR_ONE "intensity"
+    ID_OW2MDIFRAME_INDCR_TWO "W"
+    ID_OW2MDIFRAME_INDCR_THREE "W"
+    ID_OW2MDIFRAME_INDCR_FOUR "W"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOMP_50             "Zoom out by 50%"
+    ID_ZOOMP_100            "Zoom in by 100%"
+    ID_ZOOMP_150            "Zoom in by 150%"
+    ID_ZOOMP_10             "Zoom out by 10%"
+    ID_ZOOM_ZOOMTOFIT       "Automatically zoom based on the window size"
+    ID_ZOOM_ZOOMNORMAL      "Return back to 100% Zooming"
+    ID_ZOOMP_75             "Zoom out by 75%"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOMP_200            "Zoom in by 200%"
+    ID_ZOOMP_400            "Zoom in by 400%"
+    ID_ZOOMP_800            "Zoom in 800%"
+    ID_ZOOM_ZOOMOFF         "Turn off Zooming"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TRANS_SPATIAL_STRETCH "Confined spatial stretch (broken rotation)"
+    ID_TRANS_SPATIAL_ROTATION 
+                            "2D rotation of the spatial set (pixelset and pointset)"
+    ID_TRANS_SPECTRAL_INVERT 
+                            "Invert spectral information of the currently visualized component(s)"
+    ID_TRANSFORMATION_LAUNCHSEQUENCE 
+                            "Repeat the last applied transformation in sequence"
+    ID_TRANS_LAUNCHSCENARIO "Play a scenario of commands, transformation and analysis"
+    ID_TRANSFORMATION_REPEATINSEQUENCE 
+                            "Repeat last applied transformation in Sequence"
+    ID_TRANS_SPATIAL_CONFINEDSTRETCH 
+                            "Apply a center point constrained upper and lower translation"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_PIXELSET_INTENSITY "View pixelset intensity component"
+    ID_VIEW_PIXELSET_HUE    "View pixelset hue component"
+    ID_VIEW_PIXELSET_SATURATION "View pixelset saturation component"
+    ID_VIEW_PIXELSET_RED    "View the pixelset red component"
+    ID_VIEW_PIXELSET_GREEN  "View the pixelset green component"
+    ID_VIEW_PIXELSET_BLUE   "View the pixelset blue component"
+    ID_VIEW_POINTSET_MARK   "View each pointset element as a mark"
+    ID_VIEW_POINTSET_CROSS  "View each pointset element as a cross"
+    ID_VIEW_POINTSET_ELLIPSE "View each pointset element as an ellipse"
+    ID_VIEW_POINTSET_LABELS "View the label associated with each pointset element"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TRANS_SPECTRAL_HSI   "Create Hue, Saturation and Intensity components for the pixelset"
+    ID_TRANS_SPATIAL_EDGEDETECT 
+                            "Create a class LOCALEDGE by detecting edges (local discontinuities) in the pixelset intensity component"
+    ID_TRANS_SPATIAL_FLATDETECT 
+                            "Create a class LOCALFLAT by detecting flats (local continuities) in the pixelset intensity component"
+    ID_TRANS_SPATIAL_MAXDETECT 
+                            "Create a class LOCALMAX by detecting local maximum in the pixelset intensity component"
+    ID_TRANS_SPECTRAL_STRETCH 
+                            "Stretch spectral information of the currently visualized component(s)"
+    ID_TRANS_SPECTRAL_EQUALIZE 
+                            "Equalize spectral information of the currently visualized component(s)"
+    ID_TRANS_SPATIAL_SHARPEN 
+                            "Increase the contrast of all edges (high spatial frequencies) of the visualized component(s)"
+    ID_FILE_ACQUIRE         "Acquire an image from scanner or frame grabber"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ANALYSIS_SCALE_SELECTION 
+                            "Enable user to specify local selection rectangle size with a mouse click and drag."
+    ID_TRANS_SPECTRAL_FILTER 
+                            "Triggers a series of iplFixedFiler() calls for testing IPL filtering"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOMP_1000           "Zoom in by 1000%"
+    ID_ZOOMP_1500           "Zoom in by 1500%"
+    ID_ZOOMP_2000           "Zoom in by 2000%"
+    ID_ZOOMP_2500           "Zoom in by 2500%"
+    ID_ZOOMP_3000           "Zoom in by 3000%"
+    ID_VIEW_LOGWINDOW       "Show or hide the log window\nToggle log mode"
+    ID_TRANS_SPECTRAL_CONVERTTOMONO 
+                            "Create a monochrome pixelset averaging visible components"
+    ID_TRANS_SPECTRAL_CONVERTTOMONO_SET 
+                            "Create a pixelset with each monochrome component"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_COMMON_AG           "\n2D Audio GUI\n2D Audio GUI\n2D Audio GUI Files (*.oag)\n.OAG\nOIII.Document\nOffworld Document"
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+OWGE_INDEX.HTML         HTML                    "owge_index.html"
+OWOL_INDEX.HTML         HTML                    "owol_index.html"
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\OIII.rc2"  // non-Microsoft Visual C++ edited resources
+
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ow_iff - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP30A2.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IFF_EXPORTS" /Fp"Debug/ow_iff.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\spi\oifii\ow_iff\ow_iff.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP30A2.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP30A3.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IFF_EXPORTS" /Fp"Debug/ow_iff.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\spi\oifii\ow_iff\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP30A3.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP30A4.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib accuimr5.lib /nologo /dll /incremental:yes /pdb:"Debug/ow_iff.pdb" /debug /machine:I386 /out:"Debug/ow_iff.dll" /implib:"Debug/ow_iff.lib" /pdbtype:sept 
+.\Debug\ow_iff.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP30A4.TMP"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ow_iff.cpp
+Linking...
+   Creating library Debug/ow_iff.lib and object Debug/ow_iff.exp
+
+
+
+<h3>Results</h3>
+ow_iff.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,19 @@
+oifii folder copied from D:\oifii-org\storage\spi-code\D2\oifii_2014\oifii
+on 2015june16.
+
+spi.
+
+
+
+D:\spicode\audio_spi\lib-src\oifii_vs2017u
+2020june19 modif was for attempting to get the 64 bit version working but it fails (maybe) because of 64 bit issues with the freeimage library
+the 32 bit version, debug and release, works fine with small 2K images as well as larger 8K but crashes (out of memory) when building pointset/voronoi set,
+that is why the 64 bit versoin could become usefull
+
+spi.
+
+
+
+2020june20 modif will be for integrating OpenCV library
+
+spi.

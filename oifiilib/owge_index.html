@@ -1,0 +1,95 @@
+﻿<!-- <BASE url="http://www.oifii.org/ns-org/nsd/ar/sp/stations/html_googleearth/index.html"> -->
+<BASE url="res://OIII.exe/owge_index.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <head>
+<!--
+%nakedsoftware.org opensource license, copyright 2010 stephane.poirier@oifii.org 
+%
+%developed by Stephane Poirier, M.Sc. Optical Physics, Remote Sensing Application Software Developer (1991-2010)
+%
+%this function is part of oifii.org's ar\sp\ Microwave-derived 30-year Canada-Alaska Daily Temperature and Snowcover Databases library 
+%
+%this function is part of oifii.org's ar\sp\stations application (lauched with ar\sp\stations2kml.m) 
+%oifii.org's ar\sp\affiche_carte application is part of the oifii.org's ar\sp set of applications which
+%may also contain similar variant versions of this function with identical filename. 
+%
+%A geophysical research paper about this work has been submitted in June 2009 for publication in JGR-Atmosphere
+%Royer, A. and Poirier S., Surface temperature spatial and temporal variations in North America from homogenized 
+%satellite SMMR-SSM/I microwave measurements and reanalysis for 1979-2008, Journal of Geophysical Research - Atmosphere, 
+%Submitted June 2009, http://www.oifii.org/tsatdb/Royer-Poirier_Microwave-derived-daily-surface-temperature_JGR2009JD012760_R2.pdf
+%
+%This study's database can be downloaded from the author web site at:
+%http://www.oifii.org/tsatdb/Royer-Poirier_Microwave-derived-daily-surface-temperature-db_1979-2008.zip
+%
+%this file is used for displaying a subset of canadian (wmo or not wmo) meteo stations for which we have 
+%compiled daily ground temperature and daily snow cover extent (url links are attached to the kml file
+%using ar-sp matlab function stations2kml() developed in January 2010  
+%
+%nakedsoftware.org opensource license, copyright 2010 stephane.poirier@oifii.org 
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-->
+    <title>30-year Daily Microwave-derived Temperature and Snowcover Variations in Canada for 67 Meteo Stations</title>
+    <!-- *** Replace the key below below with your own API key, available at http://code.google.com/apis/maps/signup.html *** -->
+    <script src="http://www.google.com/jsapi?key=ABQIAAAA6SBDo8mMuhLez4JJ4yPmmhRY1ZHZTWvcDtg416Em-i-i-DsY3BTmFJCKwwGblAwPW1gBKaaO1SoGOA"></script>
+    <script>
+	google.load("earth", "1");
+	
+	var ge = null;
+	
+	function init() 
+	{
+		google.earth.createInstance("map3d", initCallback, failureCallback);
+	}
+	
+	function initCallback(object) {
+		ge = object;
+		ge.getWindow().setVisibility(true);
+		
+		var link = ge.createLink('');
+		var href = 'http://www.oifii.org/ns-org/nsd/ar/sp/stations/canada/stations_70(manually-edited).kml';
+		link.setHref(href);	
+		var networkLink = ge.createNetworkLink('');
+		networkLink.set(link, true, true); // Sets the link, refreshVisibility, and flyToView	
+		ge.getFeatures().appendChild(networkLink); 
+		
+	}
+
+	//2010jan01, spi, under development, instead of displaying 160x240 directly, 
+	//an idea is to display 32x48 (5x5 25-km ease grid pixel as ground overlay).
+	function GroundOverlay()
+	{
+		// Create the GroundOverlay
+		var groundOverlay = ge.createGroundOverlay('');
+		
+		// Specify the image path and assign it to the GroundOverlay
+		var icon = ge.createIcon('');
+		icon.setHref("http://www.google.com/logos/earthday08.gif");
+		groundOverlay.setIcon(icon);
+		
+		// Specify the geographic location
+		var latLonBox = ge.createLatLonBox('');
+		latLonBox.setBox(48.80, 48.75, -121.77, -121.85, 0);
+		groundOverlay.setLatLonBox(latLonBox);
+		
+		// Add the GroundOverlay to Earth
+		ge.getFeatures().appendChild(groundOverlay);	
+	}
+	
+	function failureCallback(object) 
+	{
+	}
+    </script>
+  </head>
+  <body onload='init()' id='body'>
+    <center>
+      <div>
+        30-year Daily Microwave-derived Temperature and Snowcover Variations in Canada for 67 Meteo Stations<br />
+		(map view zooming and panning capabilities are enabled as well as Meteo Stations selectioning capabilities<br />
+		clicking on each Meteo Stations will enable you to view Meteo Stations-referenced videos, graphics and other analysis report documents)
+      </div>
+
+      <div id='map3d' style='border: 1px solid silver; height: 600px; width: 800px;'></div>
+    </center>
+  </body>
+</html>

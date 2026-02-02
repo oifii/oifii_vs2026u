@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OIII", "Oiii.vcproj", "{E72F33C1-67C9-4C87-9049-775E260AC4B6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ow_iff", "ow_iff\ow_iff.vcproj", "{7D8331FE-886A-40E0-8E18-280957826212}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ow_ipl", "ow_ipl\ow_ipl.vcproj", "{025462CA-198F-4834-9C9F-97348F140157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E72F33C1-67C9-4C87-9049-775E260AC4B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E72F33C1-67C9-4C87-9049-775E260AC4B6}.Debug|Win32.Build.0 = Debug|Win32
+		{E72F33C1-67C9-4C87-9049-775E260AC4B6}.Release|Win32.ActiveCfg = Release|Win32
+		{E72F33C1-67C9-4C87-9049-775E260AC4B6}.Release|Win32.Build.0 = Release|Win32
+		{7D8331FE-886A-40E0-8E18-280957826212}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D8331FE-886A-40E0-8E18-280957826212}.Debug|Win32.Build.0 = Debug|Win32
+		{7D8331FE-886A-40E0-8E18-280957826212}.Release|Win32.ActiveCfg = Release|Win32
+		{7D8331FE-886A-40E0-8E18-280957826212}.Release|Win32.Build.0 = Release|Win32
+		{025462CA-198F-4834-9C9F-97348F140157}.Debug|Win32.ActiveCfg = Debug|Win32
+		{025462CA-198F-4834-9C9F-97348F140157}.Debug|Win32.Build.0 = Debug|Win32
+		{025462CA-198F-4834-9C9F-97348F140157}.Release|Win32.ActiveCfg = Release|Win32
+		{025462CA-198F-4834-9C9F-97348F140157}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

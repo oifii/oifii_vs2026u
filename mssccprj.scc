@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Oiii.dsp]
+SCC_Aux_Path = "C:\spi-aggregation\spi1\oifii_sourcesafe"
+SCC_Project_Name = "$/OIFII.IntelDLL", BAAAAAAA
+
+[OIII.MAK]
+SCC_Aux_Path = "C:\spi-aggregation\spi1\oifii_sourcesafe"
+SCC_Project_Name = "$/OIFII.IntelDLL", BAAAAAAA

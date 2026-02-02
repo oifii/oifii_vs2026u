@@ -1,0 +1,234 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OIII - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\WinRel/OIII.res" /d "NDEBUG" "C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OIII.rc"" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "OWGRAPH_INTERNAL" /D "OIIIAPP" /Fp".\WinRel/Oiii.pch" /Yu"stdafx.h" /Fo".\WinRel/" /Fd".\WinRel/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_debug.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_fileio.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_pointset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_segmentset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_view.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\c_xyzi.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_datamdi.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_dataview.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_graphdoc.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_graphmdi.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_graphset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gl_graphvw.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\gotodlg.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\LOGDOC.CPP"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\LOGMDI.CPP"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\LOGVIEW.CPP"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\mainfrm.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\oifii_proppage.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\oifii_propsettings.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\oifii_propsheet.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OIII.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OW2doc.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\ow2mdi.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OW2view.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OW3VIEW.CPP"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owclassset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owdoc.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OWedgeset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_histo.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_histovw.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_profile.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_profilevw.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_scatter.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owgl_scattervw.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OWmultidoc.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OWpixelset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owpointset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\owsegmentset.cpp"
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\OWview.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP10.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP11.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "OWGRAPH_INTERNAL" /D "OIIIAPP" /Fp".\WinRel/Oiii.pch" /Yc"stdafx.h" /Fo".\WinRel/" /Fd".\WinRel/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP11.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+ow_iff.lib ow_ipl.lib opengl32.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:".\WinRel/Oiii.pdb" /machine:I386 /def:".\OIII.DEF" /out:".\WinRel/Oiii.exe" 
+".\WinRel\c_debug.obj"
+".\WinRel\c_fileio.obj"
+".\WinRel\c_pointset.obj"
+".\WinRel\c_segmentset.obj"
+".\WinRel\c_view.obj"
+".\WinRel\c_xyzi.obj"
+".\WinRel\gl_datamdi.obj"
+".\WinRel\gl_dataview.obj"
+".\WinRel\gl_graphdoc.obj"
+".\WinRel\gl_graphmdi.obj"
+".\WinRel\gl_graphset.obj"
+".\WinRel\gl_graphvw.obj"
+".\WinRel\gotodlg.obj"
+".\WinRel\LOGDOC.OBJ"
+".\WinRel\LOGMDI.OBJ"
+".\WinRel\LOGVIEW.OBJ"
+".\WinRel\mainfrm.obj"
+".\WinRel\oifii_proppage.obj"
+".\WinRel\oifii_propsettings.obj"
+".\WinRel\oifii_propsheet.obj"
+".\WinRel\OIII.obj"
+".\WinRel\OW2doc.obj"
+".\WinRel\ow2mdi.obj"
+".\WinRel\OW2view.obj"
+".\WinRel\OW3VIEW.OBJ"
+".\WinRel\owclassset.obj"
+".\WinRel\owdoc.obj"
+".\WinRel\OWedgeset.obj"
+".\WinRel\owgl_histo.obj"
+".\WinRel\owgl_histovw.obj"
+".\WinRel\owgl_profile.obj"
+".\WinRel\owgl_profilevw.obj"
+".\WinRel\owgl_scatter.obj"
+".\WinRel\owgl_scattervw.obj"
+".\WinRel\OWmultidoc.obj"
+".\WinRel\OWpixelset.obj"
+".\WinRel\owpointset.obj"
+".\WinRel\owsegmentset.obj"
+".\WinRel\OWview.obj"
+".\WinRel\stdafx.obj"
+".\WinRel\OIII.res"
+".\ow_ipl\Debug\ow_ipl.lib"
+".\ow_iff\Debug\ow_iff.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP12.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+stdafx.cpp
+Compiling...
+c_debug.cpp
+c_fileio.cpp
+c_pointset.cpp
+c_segmentset.cpp
+c_view.cpp
+c_xyzi.cpp
+gl_datamdi.cpp
+gl_dataview.cpp
+gl_graphdoc.cpp
+gl_graphmdi.cpp
+gl_graphset.cpp
+gl_graphvw.cpp
+gotodlg.cpp
+LOGDOC.CPP
+LOGMDI.CPP
+LOGVIEW.CPP
+mainfrm.cpp
+oifii_proppage.cpp
+oifii_propsettings.cpp
+oifii_propsheet.cpp
+Generating Code...
+Compiling...
+OIII.cpp
+OW2doc.cpp
+ow2mdi.cpp
+OW2view.cpp
+OW3VIEW.CPP
+owclassset.cpp
+owdoc.cpp
+OWedgeset.cpp
+owgl_histo.cpp
+owgl_histovw.cpp
+owgl_profile.cpp
+owgl_profilevw.cpp
+owgl_scatter.cpp
+owgl_scattervw.cpp
+OWmultidoc.cpp
+OWpixelset.cpp
+owpointset.cpp
+owsegmentset.cpp
+OWview.cpp
+Generating Code...
+Linking...
+   Creating library .\WinRel/Oiii.lib and object .\WinRel/Oiii.exp
+
+
+
+<h3>Results</h3>
+Oiii.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ow_iff - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP16.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IFF_EXPORTS" /Fp"Release/ow_iff.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\ow_iff\ow_iff.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP16.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP17.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IFF_EXPORTS" /Fp"Release/ow_iff.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\ow_iff\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP17.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib accuimr5.lib /nologo /dll /incremental:no /pdb:"Release/ow_iff.pdb" /machine:I386 /out:"Release/ow_iff.dll" /implib:"Release/ow_iff.lib" 
+".\Release\ow_iff.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP18.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ow_iff.cpp
+Linking...
+   Creating library Release/ow_iff.lib and object Release/ow_iff.exp
+
+
+
+<h3>Results</h3>
+ow_iff.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ow_ipl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IPL_EXPORTS" /Fp"Release/ow_ipl.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\ow_ipl\ow_ipl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1C.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OW_IPL_EXPORTS" /Fp"Release/ow_ipl.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\spoirier\dev-cpp\oifii_sourcecode\offworld_2002-2007\sourcecode\oifii\ow_ipl\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1D.tmp" 
+Creating temporary file "C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ipl.lib /nologo /dll /incremental:no /pdb:"Release/ow_ipl.pdb" /machine:I386 /out:"Release/ow_ipl.dll" /implib:"Release/ow_ipl.lib" 
+".\Release\ow_ipl.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\pois2502\LOCALS~1\Temp\RSP1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ow_ipl.cpp
+Linking...
+   Creating library Release/ow_ipl.lib and object Release/ow_ipl.exp
+
+
+
+<h3>Results</h3>
+ow_ipl.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

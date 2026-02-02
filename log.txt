@@ -1,0 +1,56 @@
+Initializing portaudio library ... 
+Initialized OK.
+Selecting audio device ... 
+devicename 55S425CA (Intel(R) Display Audi maps to deviceid 5
+devicename 55S425CA (Intel(R) Display Audio) maps to deviceid 14
+devicename CABLE Input (VB-Audio Virtual C maps to deviceid 6
+devicename CABLE Input (VB-Audio Virtual Cable) maps to deviceid 15
+devicename CABLE Output (VB-Audio Point) maps to deviceid 25
+devicename CABLE Output (VB-Audio Virtual  maps to deviceid 3
+devicename CABLE Output (VB-Audio Virtual Cable) maps to deviceid 12
+devicename CABLE-A Input (VB-Audio Cable A maps to deviceid 7
+devicename CABLE-A Input (VB-Audio Cable A) maps to deviceid 16
+devicename CABLE-A Output (VB-Audio CABLE-A) maps to deviceid 33
+devicename CABLE-A Output (VB-Audio Cable  maps to deviceid 2
+devicename CABLE-A Output (VB-Audio Cable A) maps to deviceid 11
+devicename Input (@System32\drivers\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0
+;(huaweidroide)) maps to deviceid 32
+devicename Microphone (Realtek HD Audio Mic input) maps to deviceid 28
+devicename Microphone (Realtek(R) Audio) maps to deviceid 1
+devicename Microsoft Sound Mapper - Input maps to deviceid 0
+devicename Microsoft Sound Mapper - Output maps to deviceid 4
+devicename Output (@System32\drivers\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0
+;(huaweidroide)) maps to deviceid 31
+devicename Output (Intel(R) Display Audio Output 1.1) maps to deviceid 30
+devicename Primary Sound Capture Driver maps to deviceid 9
+devicename Primary Sound Driver maps to deviceid 13
+devicename Speakers (Realtek HD Audio output) maps to deviceid 27
+devicename Speakers (VB-Audio CABLE-A) maps to deviceid 34
+devicename Speakers (VB-Audio Point) maps to deviceid 26
+devicename Speakers/Headphones (Realtek(R) maps to deviceid 8
+devicename Speakers/Headphones (Realtek(R) Audio) maps to deviceid 17
+devicename Stereo Mix (Realtek HD Audio Stereo input) maps to deviceid 29
+Error, audio device not found, will use default
+Device: 55S425CA (Intel(R) Display Audi
+Device selected OK.
+idnew_point: 0 (0, 0)
+idnew_point: 1 (1, 0)
+idnew_point: 2 (1, 1)
+idnew_point: 3 (0, 1)
+idnew_point: 4 (0, 0)
+idnew_point: 5 (0, 0)
+idnew_point: 6 (0, 0)
+idnew_point: 7 (0, 0)
+idnew_point: 8 (0, 0)
+idnew_point: 9 (0, 0)
+idnew_point: 10 (0, 0)
+idnew_point: 11 (0, 0)
+idnew_point: 12 (0, 0)
+idnew_point: 13 (0, 0)
+idnew_point: 14 (0, 0)
+idnew_point: 15 (0, 0)
+Loading pixelset ... done.
+     Allocating pixelset buffer ... done.
+Will now perform texture extraction
+     Extracting texture from pixelset ...done.
+     building triangle network ... 

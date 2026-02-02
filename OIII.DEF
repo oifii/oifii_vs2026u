@@ -1,0 +1,16 @@
+; oiii.def
+;
+; This is a part of the Offworld Intelligent Image Interpreter.
+; Copyright (c) 1994-2014 Stephane Poirier
+; All rights reserved.
+;
+
+NAME         OIII
+DESCRIPTION  'Offworld Intelligent Image Interpreter Windows Application'
+
+;EXETYPE      WINDOWS
+
+
+HEAPSIZE     1024
+
+

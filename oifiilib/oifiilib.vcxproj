@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BED46B9F-932B-4BAF-98F7-FA1984F88287}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>oifiilib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;OIFIILIB_EXPORTS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ow_ipl;..\ow_iff;..\..\portaudio\include;..\..\..\spiwavsetlib;..\..\freeimage_vs2017\Wrapper\FreeImagePlus;..\..\freeimage_vs2017\Dist\x32;..\..\libsndfile\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>..\ow_iff\Debug\ow_iff.lib;..\ow_ipl\Debug\ow_ipl.lib;opengl32.lib;glu32.lib;..\..\portaudio\build\msvc\Win32\Debug\portaudio_x86.lib;..\..\libsndfile\libsndfile-1.lib;..\..\freeimage3180_vs2017\Wrapper\FreeImagePlus\dist\x32\FreeImagePlus.lib;..\..\freeimage3180_vs2017\dist\x32\freeimage.lib;..\..\..\spiwavsetlib_vs2017u\Debug\spiwavsetlib_vs2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;OIFIILIB_EXPORTS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ow_ipl;..\ow_iff;..\..\portaudio(x64)\include;..\..\..\spiwavsetlib;..\..\freeimage_vs2017(x64)\Wrapper\FreeImagePlus;..\..\freeimage_vs2017(x64)\Dist\x64;..\..\libsndfile(x64)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>..\ow_iff\x64\Debug\ow_iff.lib;..\ow_ipl\x64\Debug\ow_ipl.lib;opengl32.lib;glu32.lib;..\..\portaudio(x64)\build\msvc\x64\Debug\portaudio_x64.lib;..\..\libsndfile(x64)\lib\libsndfile-1.lib;..\..\freeimage3180_vs2017\Wrapper\FreeImagePlus\dist\x64\FreeImagePlus.lib;..\..\freeimage3180_vs2017\dist\x64\freeimage.lib;..\..\..\spiwavsetlib_vs2017u\x64\Debug\spiwavsetlib_vs2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;OIFIILIB_EXPORTS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ow_ipl;..\ow_iff;..\..\portaudio\include;..\..\..\spiwavsetlib;..\..\libsndfile\include;..\..\freeimage_vs2017\Wrapper\FreeImagePlus;..\..\freeimage_vs2017\Dist\x32</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\ow_iff\Release\ow_iff.lib;..\ow_ipl\Release\ow_ipl.lib;opengl32.lib;glu32.lib;..\..\portaudio\build\msvc\Win32\Release\portaudio_x86.lib;..\..\libsndfile\libsndfile-1.lib;..\..\freeimage3180_vs2017\Wrapper\FreeImagePlus\dist\x32\FreeImagePlus.lib;..\..\freeimage3180_vs2017\dist\x32\freeimage.lib;..\..\..\spiwavsetlib_vs2017u\Release\spiwavsetlib_vs2017.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;OIFIILIB_EXPORTS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ow_ipl;..\ow_iff;..\..\portaudio(x64)\include;..\..\..\spiwavsetlib;..\..\libsndfile(x64)\include;..\..\freeimage_vs2017(x64)\Wrapper\FreeImagePlus;..\..\freeimage_vs2017(x64)\Dist\x64</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\ow_iff\x64\Release\ow_iff.lib;..\ow_ipl\x64\Release\ow_ipl.lib;opengl32.lib;glu32.lib;..\..\portaudio(x64)\build\msvc\x64\Release\portaudio_x64.lib;..\..\libsndfile(x64)\lib\libsndfile-1.lib;..\..\freeimage3180_vs2017\Wrapper\FreeImagePlus\dist\x64\FreeImagePlus.lib;..\..\freeimage3180_vs2017\dist\x64\freeimage.lib;..\..\..\spiwavsetlib_vs2017u\x64\Release\spiwavsetlib_vs2017.lib</AdditionalDependencies>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="oifiilib.licenseheader" />
+    <None Include="owge_index.html" />
+    <None Include="owol_index.html" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cur00003.cur" />
+    <None Include="RES\DRAWELLIPSE.CUR" />
+    <None Include="RES\DRAWELLIPSEDRAG.CUR" />
+    <None Include="res\idr_main.ico" />
+    <None Include="RES\IDR_ZOOM.ICO" />
+    <None Include="res\OW2AGdoc.ico" />
+    <None Include="res\OW2doc.ico" />
+    <None Include="res\OWGEdoc.ico" />
+    <None Include="res\OWOLdoc.ico" />
+    <None Include="res\roipolyl.cur" />
+    <None Include="res\roirect1.cur" />
+    <None Include="res\roirectd.cur" />
+    <None Include="res\toolbar.bmp" />
+    <None Include="RES\ZOOMDRAG.CUR" />
+    <None Include="RES\ZOOMIN.CUR" />
+    <None Include="RES\ZOOMOUT.CUR" />
+    <None Include="RES\ZOOMRECT.CUR" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c_debug.h" />
+    <ClInclude Include="c_fileio.h" />
+    <ClInclude Include="c_pointset.h" />
+    <ClInclude Include="c_segmentset.h" />
+    <ClInclude Include="c_view.h" />
+    <ClInclude Include="c_xyzi.h" />
+    <ClInclude Include="gl_owgraph.h" />
+    <ClInclude Include="LOGDOC.H" />
+    <ClInclude Include="LOGMDI.H" />
+    <ClInclude Include="LOGVIEW.H" />
+    <ClInclude Include="oifiilib.h" />
+    <ClInclude Include="oifii_app.h" />
+    <ClInclude Include="oifii_gotodlg.h" />
+    <ClInclude Include="oifii_mainfrm.h" />
+    <ClInclude Include="oifii_proppage.h" />
+    <ClInclude Include="oifii_propsettings.h" />
+    <ClInclude Include="oifii_propsheet.h" />
+    <ClInclude Include="OW2AGdoc.h" />
+    <ClInclude Include="OW2AGmdi.h" />
+    <ClInclude Include="OW2AGview.h" />
+    <ClInclude Include="OW2doc.h" />
+    <ClInclude Include="OW2MDI.H" />
+    <ClInclude Include="Ow2view.h" />
+    <ClInclude Include="OW3VIEW.H" />
+    <ClInclude Include="owclassset.h" />
+    <ClInclude Include="OWDOC.H" />
+    <ClInclude Include="OWedgeset.h" />
+    <ClInclude Include="owgl_histo.h" />
+    <ClInclude Include="owgl_histovw.h" />
+    <ClInclude Include="owgl_profile.h" />
+    <ClInclude Include="owgl_profilevw.h" />
+    <ClInclude Include="owgl_scatter.h" />
+    <ClInclude Include="owgl_scattervw.h" />
+    <ClInclude Include="OWHtmlView.h" />
+    <ClInclude Include="OWmultidoc.h" />
+    <ClInclude Include="OWpixelset.h" />
+    <ClInclude Include="owpointset.h" />
+    <ClInclude Include="owsegmentset.h" />
+    <ClInclude Include="Owview.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_debug.cpp" />
+    <ClCompile Include="c_fileio.cpp" />
+    <ClCompile Include="c_pointset.cpp" />
+    <ClCompile Include="c_segmentset.cpp" />
+    <ClCompile Include="c_view.cpp" />
+    <ClCompile Include="c_xyzi.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gl_datamdi.cpp" />
+    <ClCompile Include="gl_dataview.cpp" />
+    <ClCompile Include="gl_graphdoc.cpp" />
+    <ClCompile Include="gl_graphmdi.cpp" />
+    <ClCompile Include="gl_graphset.cpp" />
+    <ClCompile Include="gl_graphvw.cpp" />
+    <ClCompile Include="LOGDOC.CPP" />
+    <ClCompile Include="LOGMDI.CPP" />
+    <ClCompile Include="LOGVIEW.CPP" />
+    <ClCompile Include="oifiilib.cpp" />
+    <ClCompile Include="oifii_app.cpp" />
+    <ClCompile Include="oifii_gotodlg.cpp" />
+    <ClCompile Include="oifii_mainfrm.cpp" />
+    <ClCompile Include="oifii_proppage.cpp" />
+    <ClCompile Include="oifii_propsettings.cpp" />
+    <ClCompile Include="oifii_propsheet.cpp" />
+    <ClCompile Include="OW2AGdoc.cpp" />
+    <ClCompile Include="OW2AGmdi.cpp" />
+    <ClCompile Include="OW2AGview.cpp" />
+    <ClCompile Include="Ow2doc.cpp" />
+    <ClCompile Include="Ow2mdi.cpp" />
+    <ClCompile Include="OW2view.cpp" />
+    <ClCompile Include="Ow3view.cpp" />
+    <ClCompile Include="owclassset.cpp" />
+    <ClCompile Include="OWDOC.CPP" />
+    <ClCompile Include="OWedgeset.cpp" />
+    <ClCompile Include="owgl_histo.cpp" />
+    <ClCompile Include="owgl_histovw.cpp" />
+    <ClCompile Include="owgl_profile.cpp" />
+    <ClCompile Include="owgl_profilevw.cpp" />
+    <ClCompile Include="owgl_scatter.cpp" />
+    <ClCompile Include="owgl_scattervw.cpp" />
+    <ClCompile Include="OWHtmlView.cpp" />
+    <ClCompile Include="OWmultidoc.cpp" />
+    <ClCompile Include="OWpixelset.cpp" />
+    <ClCompile Include="owpointset.cpp" />
+    <ClCompile Include="owsegmentset.cpp" />
+    <ClCompile Include="OWview.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="oifii_app.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="oifii_app.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
